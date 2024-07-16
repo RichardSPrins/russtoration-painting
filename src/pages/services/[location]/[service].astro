@@ -2,8 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-const services = await getCollection("services");
-console.log(services);
+// const services = await getCollection("services");
 
 export const getStaticPaths = (async () => {
   const services = await getCollection("services");
@@ -17,10 +16,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { entry } = Astro.props;
-
 const { Content } = await entry.render();
-
-console.log(entry);
 ---
 
 <BaseLayout
