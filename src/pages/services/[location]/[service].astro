@@ -1,0 +1,474 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "src/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+const services = await getCollection("services");
+console.log(services);
+
+export const getStaticPaths = (async () => {
+  const services = await getCollection("services");
+  return services.map((entry) => ({
+    params: {
+      service: entry.slug.split("/")[1],
+      location: entry.slug.split("/")[0],
+    },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+
+const { Content } = await entry.render();
+
+console.log(entry);
+---
+
+<BaseLayout
+  title={entry.data.meta.title}
+  description={entry.data.meta.description}
+  schema={entry.data.meta.schema}
+>
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
+
+  <section id="hero-1786">
+    <div class="cs-container">
+      <div class="cs-content">
+        <h1 class="cs-title">{entry.data.title}</h1>
+      </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+      <source
+        media="(max-width: 600px)"
+        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+      />
+      <img
+        loading="lazy"
+        decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+        alt="field"
+        width="1920"
+        height="1200"
+        aria-hidden="true"
+      />
+    </picture>
+  </section>
+  <!-- ============================================ -->
+  <!--                 Content Page                 -->
+  <!-- ============================================ -->
+
+  <!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+  <section id="content-page-852">
+    <div class="cs-container">
+      <div class="cs-content">
+        <Content />
+      </div>
+      <a class="cs-button-solid">Get a FREE Quote Today</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style lang="less">
+  /*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #hero-1786 {
+      /* 200px - 300px - leaving extra space for the navigation */
+      padding: clamp(10.5rem, 25.95vw, 16.75em) (16/16rem);
+      padding-top: 20rem;
+      /* prevents the topper line from causing an overflow */
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+
+      .cs-container {
+        width: 100%;
+        max-width: (1280/16rem);
+        margin: auto;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: (48/16rem);
+      }
+
+      .cs-content {
+        text-align: center;
+        width: 100%;
+        max-width: (750/16rem);
+      }
+
+      .cs-title {
+        /* 49px - 84px */
+        font-size: clamp(3.0625rem, 6vw, 4rem);
+      }
+
+      .cs-title,
+      .cs-text {
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-text {
+        margin-bottom: (32/16rem);
+      }
+
+      .cs-button-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: (8/16rem);
+      }
+
+      .cs-button-solid {
+        font-size: (16/16rem);
+        font-weight: 700;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-align: center;
+        text-decoration: none;
+        min-width: (200/16rem);
+        margin: 0;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        color: var(--bodyTextColorWhite);
+        border-radius: (4/16rem);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          content: "";
+          width: 0%;
+          height: 100%;
+          background: #000;
+          opacity: 1;
+          border-radius: (4/16rem);
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .cs-graphic {
+        width: 100%;
+        min-width: (1920/16rem);
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 0;
+        transform: translateX(-50%);
+      }
+
+      .cs-dark {
+        display: none;
+      }
+
+      .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+
+        &:before {
+          /* Overlay */
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: #000;
+          /* prevents the cursor from interacting with it */
+          pointer-events: none;
+          opacity: 0.7;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  /* Large Desktop - 1920px */
+  @media only screen and (min-width: 120rem) {
+    #hero-1786 {
+      /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get clsoer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
+      padding-bottom: 14vw;
+    }
+  }
+
+  /*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #content-page-852 {
+      padding: var(--sectionPadding);
+      background-color: #fff;
+      /* clips the wave background from causing overflow issues when it goes off screen */
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+
+      .cs-container {
+        width: 100%;
+        max-width: (1280/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        margin: 0 auto;
+        // max-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700;
+        text-align: inherit;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--headerColor);
+      }
+
+      h2 {
+        font-size: (40/16rem) !important;
+        margin-top: (32/16rem);
+      }
+
+      h3 {
+        font-size: (34/16rem) !important;
+        color: var(--primary);
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-size: (20/16rem);
+      }
+
+      .cs-button-solid {
+        margin-bottom: (32/16rem);
+      }
+
+      .cs-no-margin {
+        margin: 0;
+      }
+
+      .cs-color {
+        color: var(--primary);
+      }
+
+      p {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--bodyTextColor);
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+
+        a {
+          font-size: inherit;
+          line-height: inherit;
+          text-decoration: underline;
+          color: var(--primary);
+        }
+      }
+
+      ol,
+      ul {
+        padding-left: (24/16rem);
+        margin: 0 0 (32/16rem) 0;
+        color: var(--bodyTextColor);
+        display: flex;
+        flex-direction: column;
+        gap: (16/16rem);
+      }
+
+      ul {
+        li {
+          list-style: none;
+          color: inherit;
+          position: relative;
+
+          &:before {
+            /* custom list bullet */
+            content: "";
+            width: 3px;
+            height: 3px;
+            background: currentColor;
+            opacity: 1;
+            border-radius: 50%;
+            position: absolute;
+            display: block;
+            top: (10/16rem);
+            left: (-12/16rem);
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .cs-image-group {
+        width: 50%;
+        max-width: (433/16rem);
+        display: none;
+        flex-direction: column;
+        gap: (20/16rem);
+        position: relative;
+
+        &:after {
+          /* colored box */
+          content: "";
+          width: 100%;
+          /* 177px - 258px */
+          height: clamp(11.0625rem, 19vw, 16.125rem);
+          background: var(--primary);
+          border-radius: (100/16rem) 0 (100/16rem);
+          opacity: 0.15;
+          display: block;
+        }
+      }
+
+      .cs-picture {
+        width: 100%;
+        /* 300px - 520px */
+        height: clamp(18.75rem, 40vw, 32.5rem);
+        box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
+        /* 125px - 200px */
+        border-radius: 0 clamp(7.8125rem, 15vw, 12.5rem) 0
+          clamp(7.8125rem, 15vw, 12.5rem);
+        /* prevents border from affecting height and width */
+        box-sizing: border-box;
+        /* clips img tag corners */
+        overflow: hidden;
+        display: block;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          /* makes it act like a background image */
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #content-page-852 {
+      .cs-content {
+        flex: none;
+        width: 60%;
+      }
+
+      .cs-image-group {
+        display: flex;
+      }
+    }
+  }
+
+  .cs-button-solid {
+    font-size: (16/16rem);
+    line-height: (56/16rem);
+    text-decoration: none;
+    font-weight: 700;
+    overflow: hidden;
+    margin: 0;
+    color: #fff;
+    padding: 0 (48/16rem);
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #1a1a1a;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
+    }
+
+    &:hover {
+      color: var(--primary);
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+</style>

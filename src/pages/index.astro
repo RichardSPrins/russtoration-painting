@@ -1,564 +1,716 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
+import GalleryPreview from "@components/GalleryPreview.astro";
 ---
 
 <BaseLayout
-  title="Pixel Perfect Websites"
-  description="Meta description for the page"
+  title="Premier Painting & Restoration Services in Treasure Valley"
+  description="Transform your home or business with Russtoration Painting. Offering expert interior and exterior painting, deck and fence staining, stucco repair, pressure washing, and more in Nampa, Boise, Meridian, and all of Treasure Valley. Get your free quote today!"
   preloadImg={import("../assets/images/landing.jpg")}
 >
   <!-- ============================================ -->
   <!--                    Hero                      -->
   <!-- ============================================ -->
 
-  <section id="hero">
+  <section id="hero-1785">
     <div class="cs-container">
-      <div class="cs-flex-group">
-        <span class="cs-topper">mountain hiking society</span>
-        <h1 class="cs-title">Explore the World with Exciting People</h1>
-        <p class="cs-text">
-          Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius.
-          Nibh tortor id aliquet lectus proin nibh condimentum.
-        </p>
-        <a href="/about" class="cs-button-solid">Explore More</a>
-        <a href="/contact" class="cs-button-transparent">
-          <img
-            class="cs-img"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-            alt="play icon"
-            width="17"
-            height="17"
-          />
-           Get in Touch
-        </a>
+      <div class="cs-content">
+        <span class="cs-topper">Russtoration Painting</span>
+        <h1 class="cs-title">
+          PREMIER PAINTING COMPANY PROUDLY SERVING BOISE, NAMPA & THE TREASURE
+          VALLEY
+        </h1>
+        <div class="cs-button-group">
+          <a href="" class="cs-button-solid cs-button1">GET A QUOTE TODAY</a>
+        </div>
       </div>
     </div>
 
     <!-- Background Image -->
-    <picture class="cs-picture">
+    <picture class="cs-background">
       <source
         media="(max-width: 600px)"
-        srcset="/assets/images/landing-m.webp"
+        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
       />
-      <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg" />
+      <source
+        media="(min-width: 601px)"
+        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+      />
       <img
-        aria-hidden="true"
+        loading="lazy"
         decoding="async"
-        src="/assets/images/landing.jpg"
-        alt="new home"
-        width="2500"
-        height="1667"
-        loading="eager"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+        alt="field"
+        width="1920"
+        height="1200"
+        aria-hidden="true"
       />
     </picture>
+
+    <img
+      class="cs-graphic"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg"
+      alt="graphic"
+      height="161"
+      width="1920"
+      loading="lazy"
+      decoding="async"
+    />
+    <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+    <img
+      class="cs-graphic cs-graphic-dark"
+      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg"
+      alt="graphic"
+      height="161"
+      width="1920"
+      loading="lazy"
+      decoding="async"
+    />
   </section>
 
   <!-- ============================================ -->
-  <!--                  Services                    -->
+  <!--                    Services                  -->
   <!-- ============================================ -->
 
-  <section id="services" class="services">
-    <!-- Get Icons From flaticon.com -->
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service1.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 1</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service2.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 2</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-    <div class="card">
-      <picture>
-        <img
-          aria-hidden="true"
-          decoding="async"
-          src="/assets/svgs/service3.svg"
-          alt="appliance"
-          width="48"
-          height="48"
-        />
-      </picture>
-      <h2>Service 3</h2>
-      <p>
-        Talk about the service with keywords people will be searching for it by.
-        Keep it 1-2 sentences.
-      </p>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                 Side By Side                 -->
-  <!-- ============================================ -->
-
-  <section id="sbs">
+  <section id="services-1304">
     <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="563"
-          />
-        </picture>
-      </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">About Us</span>
-        <h2 class="cs-title">About Company Title</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
+      <div class="cs-content">
         <div class="cs-flex-group">
-          <p class="cs-flex-p">
-            In consequat tincidunt turpis sit amet imperdiet. Praesent Classei
-            consequat tincidunt turpis sit amet imperdiet for mind.
-          </p>
-          <span class="cs-name">Justin Time</span>
-          <span class="cs-job">CEO-Founder</span>
-          <img
-            class="cs-quote-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-            alt="gavel"
-            width="136"
-            height="77"
-          />
+          <span class="cs-topper">Our Services</span>
+          <h2 class="cs-title">Commercial & Residential Painting Services</h2>
         </div>
-        <a href="/about" class="cs-button-solid">More About Us</a>
+        <p class="cs-text">
+          We offer a wide array of painting, staining, and refinishing services
+          for homeowners and commercial contractors in Nampa, Meridian, Boise,
+          and all across the Treasure Valley. Our services also include exterior
+          restoration and pressure washing to ensure the best condition for your
+          home or business, while adding substantial curb appeal.
+        </p>
       </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/commercial.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Commercial Painting</h3>
+            <p class="cs-item-text">
+              Professional painting services for offices, apartments, and
+              commercial buildings.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/house.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Residential Painting</h3>
+            <p class="cs-item-text">
+              Bring new life to your home’s interior and exterior with our
+              expert painting.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/pressure-wash.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Pressure Washing</h3>
+            <p class="cs-item-text">
+              Deep cleaning for surfaces to prepare for painting or restore
+              their original look.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/deck.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Deck Painting & Staining</h3>
+            <p class="cs-item-text">
+              Get your deck ready for your summer fun or restore weather damage
+              with a fresh coat of deck paint or stain.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/door.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Wood Door Refinishing</h3>
+            <p class="cs-item-text">
+              Restore the elegance of your wood doors with our refinishing
+              services.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/cabinet.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Cabinet Painting & Staining</h3>
+            <p class="cs-item-text">
+              Revitalize your kitchen or bathroom cabinets with our detailed
+              painting and staining.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/epoxy.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Epoxy Floor Coating</h3>
+            <p class="cs-item-text">
+              Durable and attractive flooring solutions for your garage or
+              workspace.
+            </p>
+          </a>
+        </li>
+        <li class="cs-item">
+          <a href="" class="cs-link">
+            <img
+              class="cs-icon"
+              src="/assets/svgs/fence.svg"
+              loading="lazy"
+              decoding="async"
+              alt="icon"
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <h3 class="cs-h3">Fence Painting & Restoration</h3>
+            <p class="cs-item-text">
+              Get your aging fence looking brand new again with a fresh stain or
+              coat of paint.
+            </p>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ============================================ -->
-  <!--            Extra Content To Rank             -->
+  <!--                Side By Side                  -->
   <!-- ============================================ -->
 
-  <section id="sbs-r">
+  <section id="sbs-945">
     <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-      </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">SEO Ranking</span>
-        <h2 class="cs-title">Talk about a main service keyword</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
-        </p>
-        <p class="cs-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur,
-          iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi
-          fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores
-          ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo
-          quia neque est quas, in placeat. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Doloribus modi laudantium voluptatibus
-          rem libero error minus quia eligendi sapiente eos.
-        </p>
-        <a href="/blog" class="cs-button-solid">Read our Blog</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
-  <!--                   Gallery                    -->
-  <!-- ============================================ -->
-
-  <section id="gallery">
-    <div class="cs-container">
-      <span class="cs-topper">Our Portfolio</span>
-      <h2 class="cs-title">
-        Et orci volutpat, back up generator installations
-      </h2>
       <div class="cs-image-group">
-        <!-- Row 1-->
-        <div class="cs-row cs-row-1">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port1-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port1.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port1.jpg"
-              alt="new hallway"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port4-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port4.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port4.jpg"
-              alt="new home construction"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port7-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port7.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port7.jpg"
-              alt="building a new wall"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
+        <!--Long Left Image-->
+        <picture class="cs-picture cs-picture1">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+            alt="hair salon"
+            width="349"
+            height="590"
+          />
+        </picture>
+        <!--Top right image-->
+        <picture class="cs-picture cs-picture2">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+            alt="hair salon"
+            width="281"
+            height="387"
+          />
+        </picture>
+        <!--Bottom right image-->
+        <picture class="cs-picture cs-picture3">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+            alt="hair salon"
+            width="281"
+            height="280"
+          />
+        </picture>
+        <!--Seal-->
+        <img
+          class="cs-seal"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/seal.svg"
+          alt="seal"
+          width="150"
+          height="150"
+        />
+      </div>
+      <div class="cs-content">
+        <span class="cs-topper">ABOUT RUSSTORATION PAINTING</span>
+        <h2 class="cs-title">
+          WE ARE THE TREASURE VALLEY'S LEADING RESIDENTIAL & COMMERCIAL PAINTING
+          CONTRACTORS
+        </h2>
+        <p class="cs-text">
+          The Hair salon Stitch pack is designed specifically for a
+          hairdressers, salons, and beauty centers, with a modern high end feel
+          to match the expectations for design in this industry. These Stitches
+          are great for anything and everything hair and beauty but can also be
+          repurposed for anything high end or luxury.
+        </p>
+        <p class="cs-text">
+          The Hair salon Stitch pack is designed specifically for a
+          hairdressers, salons, and beauty centers, with a modern high end feel
+          to match the expectations for design in this industry. These Stitches
+          are great for anything and everything hair and beauty but can also be
+          repurposed for anything high end or luxury.
+        </p>
+        <a href="" class="cs-button-solid" aria-label="learn more about us"
+          >Learn More</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                Why Choose Us                 -->
+  <!-- ============================================ -->
+
+  <section id="why-choose-1634">
+    <div class="cs-container">
+      <div class="cs-content">
+        <div class="cs-flex">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">WHY CHOOSE RUSSTORATION PAINTING?</h2>
         </div>
-        <!-- Row 2 -->
-        <div class="cs-row cs-row-2">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port2-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port2.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port2.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port5-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port5.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port5.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port8-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port8.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port8.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
+        <div>
+          <p class="cs-text">
+            Russtoration Painting is committed to excellence in every project we
+            undertake. Our team of professionals takes pride in delivering
+            superior painting and restoration services that exceed our clients'
+            expectations. We understand the importance of maintaining a clean
+            and safe environment while working on your property and ensure
+            minimal disruption to your daily life or business operations.
+          </p>
+          <p class="cs-text">
+            We believe in building lasting relationships with our clients
+            through trust, quality workmanship, and exceptional customer
+            service. Our goal is to make your painting or restoration project a
+            seamless and satisfying experience from start to finish.
+          </p>
         </div>
-        <!-- Row 3 -->
-        <div class="cs-row cs-row-3">
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port3-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port3.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port3.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
+      </div>
+      <div class="cs-wrapper">
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chat-gold.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">EXPERT CRAFTSMANSHIP</h3>
+              <p class="cs-item-text">
+                Our skilled painters and restoration experts are dedicated to
+                providing high-quality work on every project.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/call-gold.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">COMPREHENSIVE SERVICES</h3>
+              <p class="cs-item-text">
+                From interior and exterior painting to pressure washing and
+                epoxy floor coating, we offer a wide range of services to meet
+                your needs.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/money-gold.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">CUSTOMER SATISFACTION</h3>
+              <p class="cs-item-text">
+                We prioritize your satisfaction and work closely with you to
+                achieve the best possible results for your home or business.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="cs-image-group">
+          <div class="cs-picture-wrapper">
+            <picture class="cs-picture cs-picture1">
+              <!--Mobile Image-->
+              <source
+                media="(max-width: 600px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
+              />
+              <!--Tablet and above Image-->
+              <source
+                media="(min-width: 601px)"
+                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
+                alt="meeting"
+                width="434"
+                height="414"
+              />
+            </picture>
+            <div class="cs-box">
+              <span class="cs-header">100% SATISFACTION</span>
+              <span class="cs-desc">We Guarantee Our Work</span>
+            </div>
+          </div>
           <picture class="cs-picture cs-picture2">
+            <!--Mobile Image-->
             <source
               media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port6-m.jpg"
+              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
             />
+            <!--Tablet and above Image-->
             <source
               media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port6.jpg"
+              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
             />
             <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port6.jpg"
-              alt="apartment addition"
               loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port9-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port9.jpg"
-            />
-            <img
-              aria-hidden="true"
               decoding="async"
-              src="/assets/images/portfolio/port9.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
+              alt="on computer"
+              width="197"
+              height="197"
             />
           </picture>
         </div>
       </div>
-      <a href="/projects" class="cs-button-solid">View Full Gallery</a>
     </div>
   </section>
+
+  <!-- ============================================ -->
+  <!--                Side By Side                  -->
+  <!-- ============================================ -->
+
+  <section id="sbs-945">
+    <div class="cs-container">
+      <div class="cs-image-group">
+        <!--Long Left Image-->
+        <picture class="cs-picture cs-picture1">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+            alt="hair salon"
+            width="349"
+            height="590"
+          />
+        </picture>
+        <!--Top right image-->
+        <picture class="cs-picture cs-picture2">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+            alt="hair salon"
+            width="281"
+            height="387"
+          />
+        </picture>
+        <!--Bottom right image-->
+        <picture class="cs-picture cs-picture3">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+            alt="hair salon"
+            width="281"
+            height="280"
+          />
+        </picture>
+      </div>
+      <div class="cs-content">
+        <span class="cs-topper">SERVING ALL OF THE TREASURE VALLEY</span>
+        <h2 class="cs-title">
+          WE TAKE PRIDE IN PROVIDING SUPERIOR SERVICE TO OUR COMMUNITY
+        </h2>
+        <p class="cs-text">
+          Russtoration Painting proudly serves Nampa, Boise, Meridian, Kuna,
+          Eagle, Emmett, and all other areas in the Treasure Valley. Our
+          comprehensive painting services are designed to enhance the aesthetic
+          appeal and durability of your property, whether it’s a cozy home or a
+          bustling commercial space.
+        </p>
+        <p class="cs-text">
+          With a focus on quality and attention to detail, we ensure that every
+          project is completed to the highest standards. Trust Russtoration
+          Painting to deliver exceptional results that will stand the test of
+          time and elevate the look of your property.
+        </p>
+        <a href="" class="cs-button-solid" aria-label="learn more about us"
+          >GET A QUOTE TODAY</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                Video Section                  -->
+  <!-- ============================================ -->
+
+  <section id="sbs-1636">
+    <div class="cs-container">
+      <div class="cs-content">
+        <div class="cs-flex">
+          <span class="cs-topper">FEATURED SERVICE</span>
+          <h2 class="cs-title">
+            TRUSTED COMMERCIAL PAINTING & RESTORATION CONTRACTORS IN THE
+            TREASURE VALLEY
+          </h2>
+        </div>
+        <div class="cs-flex">
+          <h3 class="cs-h3">
+            Russtoration Painting is a leading provider of commercial interior
+            and exterior painting in Boise, Nampa, Meridian, and the surrounding
+            areas, offering expert solutions tailored to every project, from
+            multi unit residences to office buildings and more.
+          </h3>
+          <p class="cs-text">
+            Our comprehensive HOA painting services include interior and
+            exterior painting for offices, apartment complexes, condominiums,
+            and townhomes, as well as specialized services such as stucco
+            repair, wood rot repair, and deck and fence staining. We work
+            closely with property managers to develop customized painting plans
+            that work with your budget, while minimizing disruption to
+            residents' daily lives.
+          </p>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              Interior Painting for common areas, offices, and units
+            </li>
+            <li class="cs-li">Exterior painting for multi-unit properties</li>
+            <li class="cs-li">Stucco painting & repair</li>
+            <li class="cs-li">
+              Specialized coatings and finishes for durability and ease of
+              maintenance
+            </li>
+            <li class="cs-li">
+              Project management that works with office hours, move-ins, and
+              property maintenance schedules
+            </li>
+          </ul>
+          <a href="" class="cs-button-solid">Learn More</a>
+        </div>
+      </div>
+      <div class="cs-picture">
+        <video
+          loop=""
+          muted=""
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Videos/drone.mp4"
+          type="video/mp4"></video>
+        <button class="cs-play" aria-label="click to play video"
+          ><img
+            alt="play icon"
+            decoding="async"
+            height="24"
+            src="	https://www.colorconceptspainting.net/assets/images/play-right.svg"
+            width="24"
+            aria-hidden="true"
+            class="play-icon"
+          /></button
+        >
+      </div>
+    </div>
+  </section>
+
+  <GalleryPreview />
+  <!-- <CTA /> -->
 
   <!-- ============================================ -->
   <!--                   Reviews                    -->
   <!-- ============================================ -->
 
-  <section id="reviews">
+  <section id="reviews-508">
     <div class="cs-container">
-      <span class="cs-topper">Our Reviews</span>
-      <h2 class="cs-title">Words From Our Customers</h2>
-      <p class="cs-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor
-        volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida
-        viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo,
-        ornare. Lorem ipsum dolor sit amet.
-      </p>
-      <ul class="cs-card-group">
-        <!-- Review 1 -->
-        <li class="cs-item">
-          <img
-            class="cs-item-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-            alt="profile picture"
-            width="80"
-            height="80"
-          />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
-            habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
-            ullamcorper lectus et. Auctor velit diam fermentum consequat.
-            Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-          </p>
-          <span class="cs-reviewer">
-            Jon Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
-          <img
-            class="cs-item-stars"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16"
-          />
-        </li>
-        <!-- Review 2 -->
-        <li class="cs-item">
-          <img
-            class="cs-item-img"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-            alt="profile picture"
-            width="80"
-            height="80"
-          />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor
-            habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed
-            ullamcorper lectus et. Auctor velit diam fermentum consequat.
-            Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-          </p>
-          <span class="cs-reviewer">
-            Jane Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
-          <img
-            class="cs-item-stars"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16"
-          />
-        </li>
-      </ul>
-      <a aria-label="read more reviews" href="/reviews" class="cs-button-solid"
-        >Our Reviews</a
-      >
+      <div class="cs-content">
+        <span class="cs-topper">Feedback</span>
+        <h2 class="cs-title">What Our Clients Say About Us</h2>
+        <p class="cs-text">
+          Non curabitur gravida arcu ac tortor dignissim convallis aenean. Dui
+          id ornare arcu odio. Sodales ut eu sem integer vitae justo eget magna.
+          Duis tristique sollicitudin nibh sit amet commodo nulla facilisi
+          nullam
+        </p>
+        <a href="" class="cs-button-solid">See More Reviews</a>
+      </div>
+      <div class="cs-review">
+        <p class="cs-review-p">
+          Consequat nisl vel pretium lectus quam id leo. Mauris augue neque
+          gravida in fermentum et sollicitudin ac orci. Blandit libero volutpat
+          sed cras ornare
+        </p>
+        <img
+          class="cs-profile"
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/profile1.png"
+          alt="profile"
+          width="60"
+          height="60"
+        />
+        <div class="cs-info">
+          <span class="cs-name">Rene Rodriguez</span>
+          <span class="cs-location">Acelerisque</span>
+        </div>
+      </div>
     </div>
   </section>
-
-  <CTA />
 </BaseLayout>
 
 <style lang="less">
@@ -569,21 +721,117 @@ import CTA from "@components/CTA.astro";
 <--- -------------------------- -*/
 
   /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #hero {
-      font-family: "Roboto", "Arial", sans-serif;
-      /* Centers button */
-      text-align: center;
-      /* changes on tablet */
-      padding: 0 (16/16rem);
-      padding-bottom: (100/16rem);
+  @media only screen and (min-width: 0rem) {
+    #hero-1785 {
+      /* 200px - 300px - leaving extra space for the navigation */
+      padding: clamp(12.5rem, 25.95vw, 18.75em) (16/16rem);
+      /* prevents the topper line from causing an overflow */
+      padding-top: (280/16rem);
+      overflow: hidden;
       position: relative;
       z-index: 1;
-      /* prevents overflow from the lines extending past the screen width */
-      overflow: hidden;
 
-      .cs-picture {
-        /* Background Image */
+      .cs-container {
+        width: 100%;
+        max-width: (1280/16rem);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: (48/16rem);
+      }
+
+      .cs-topper {
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+        margin-bottom: 1rem;
+      }
+
+      .cs-content {
+        text-align: center;
+        width: 100%;
+        max-width: (750/16rem);
+      }
+
+      .cs-title {
+        /* 49px - 84px */
+        font-size: clamp(2.0625rem, 5vw, 3.25rem);
+      }
+
+      .cs-title,
+      .cs-text {
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-text {
+        margin-bottom: (32/16rem);
+      }
+
+      .cs-button-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: (8/16rem);
+      }
+
+      .cs-button-solid {
+        font-size: (16/16rem);
+        font-weight: 700;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-align: center;
+        text-decoration: none;
+        min-width: (200/16rem);
+        margin: 0;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        color: var(--bodyTextColorWhite);
+        border-radius: (4/16rem);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          content: "";
+          width: 0%;
+          height: 100%;
+          background: #000;
+          opacity: 1;
+          border-radius: (4/16rem);
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .cs-graphic {
+        width: 100%;
+        min-width: (1920/16rem);
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: 0;
+        transform: translateX(-50%);
+      }
+
+      .cs-graphic-dark {
+        display: none;
+      }
+
+      .cs-background {
         width: 100%;
         height: 100%;
         display: block;
@@ -593,219 +841,38 @@ import CTA from "@components/CTA.astro";
         z-index: -2;
 
         &:before {
-          /* Black Color Overlay */
+          /* Overlay */
           content: "";
           width: 100%;
           height: 100%;
           background: #000;
+          /* prevents the cursor from interacting with it */
+          pointer-events: none;
           opacity: 0.7;
           display: block;
           position: absolute;
           top: 0;
           left: 0;
           z-index: 1;
-          /* prevents the cursor from interacting with it */
-          pointer-events: none;
         }
 
         img {
           width: 100%;
           height: 100%;
-          /* Makes image act like a background-image */
           object-fit: cover;
           position: absolute;
           top: 0;
           left: 0;
         }
       }
-
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16em);
-        margin: auto;
-        /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
-        /* 144px - 280px - leaving extra space for the navigation */
-        /* changes on tablet */
-        padding: clamp(9em, 25.95vw, 17.5em) 0;
-        position: relative;
-
-        &:before {
-          /* Left Line */
-          content: "";
-          width: 1px;
-          height: 100%;
-          background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-          ); /* FF3.6-15 */
-          background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0.5) 0%,
-            rgba(250, 251, 252, 0) 100%
-          ); /* Chrome10-25,Safari5.1-6 */
-          opacity: 1;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-flex-group {
-        width: 80vw;
-        /* 464px - 562px */
-        max-width: clamp(29em, 60vw, 35.125em);
-        margin: auto;
-        /* 60px - 220px */
-        margin-bottom: clamp(3.75em, 15.5vw, 13.75em);
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-      }
-
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-        color: var(--primary);
-      }
-
-      .cs-title {
-        text-align: center;
-        width: 100%;
-        color: var(--bodyTextColorWhite);
-      }
-
-      .cs-text {
-        text-align: center;
-        /* 32px - 40px */
-        margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
-        /* 40px - 48px */
-        margin-bottom: clamp(2.5rem, 4vw, 3rem);
-        color: var(--bodyTextColorWhite);
-      }
-
-      .cs-button-solid {
-        line-height: clamp(2.875em, 5.5vw, 3.5em);
-        height: initial;
-        margin-bottom: calc(16 / 16 * 1rem);
-      }
-
-      .cs-button-transparent {
-        font-size: (16/16rem);
-        font-weight: 700;
-        /* 46px - 56px */
-        line-height: clamp(2.875em, 5.5vw, 3.5em);
-        text-decoration: none;
-        width: (180/16rem);
-        /* 46px - 56px */
-        height: clamp(2.875em, 5.5vw, 3.5em);
-        margin: 0 (8/16rem);
-        box-sizing: border-box;
-        padding: 0;
-        color: #fff;
-        background-color: transparent;
-        border: 1px solid var(--bodyTextColorWhite);
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-
-        &:before {
-          content: "";
-          background: #000;
-          opacity: 1;
-          display: block;
-          position: absolute;
-          /* so it sits on top of the border */
-          top: -1px;
-          right: -1px;
-          bottom: -1px;
-          left: -1px;
-          z-index: -1;
-          /* this is what creates the grow affect on hover */
-          transform: scaleX(0);
-          transition: transform 0.3s;
-          transform-origin: left;
-        }
-
-        &:hover {
-          &:before {
-            transform: scaleX(1);
-          }
-        }
-
-        .cs-img {
-          margin-right: (12/16rem);
-          display: block;
-        }
-      }
     }
   }
 
-  /* Tablet - 768px */
-  @media only screen and (min-width: 48em) {
-    #hero {
-      /* 32px - 40px */
-      padding: 0 clamp(2em, 5vw, 2.5em);
-
-      .cs-container {
-        padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
-        &:after {
-          /* Right Line */
-          content: "";
-          width: 1px;
-          height: 100%;
-          background: -moz-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0) 0%,
-            rgba(250, 251, 252, 0.5) 100%
-          ); /* FF3.6-15 */
-          background: -webkit-linear-gradient(
-            top,
-            rgba(250, 251, 252, 0) 0%,
-            rgba(250, 251, 252, 0.5) 100%
-          ); /* Chrome10-25,Safari5.1-6 */
-          opacity: 1;
-          display: block;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-      }
-
-      .cs-button-solid {
-        margin-right: (20/16rem);
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  /* Desktop Parallax Effect - 1300px */
-  @media only screen and (min-width: 81.25em) {
-    #hero {
-      background: url("/assets/images/landing.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      /* creates parallax effect on background image */
-      background-attachment: fixed;
-    }
-  }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #hero {
-        .cs-background {
-          &:before {
-            opacity: 0.8;
-          }
-        }
-      }
+  /* Large Desktop - 1920px */
+  @media only screen and (min-width: 120rem) {
+    #hero-1785 {
+      /* this ties the padding bottom value to the size of the screen width. The wider the image gets the taller it gets, meaning it will get clsoer and closer to the content. This makes the padding bottom value grow with the screen size so it accounts for the growing height of the svg graphic getting taller */
+      padding-bottom: 14vw;
     }
   }
 
@@ -813,105 +880,182 @@ import CTA from "@components/CTA.astro";
 <---          Services          -->
 <--- -------------------------- -*/
 
-  /* Mobile */
-  @media only screen and (min-width: 0em) {
-    .services {
-      width: 90%;
-      max-width: (1320/16em);
-      margin: auto;
-      margin-top: (-167/16em);
-      margin-bottom: (50/16em);
-      padding: (50/16em) (20/16em);
-      background: #fff;
-      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-      border-top: (6/16em) solid var(--primary);
-      border-radius: (5/16em);
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #services-1304 {
+      padding: var(--sectionPadding);
       position: relative;
-      z-index: 100;
-      .card {
+      z-index: 10;
+
+      .cs-container {
         width: 100%;
-        max-width: (357/16em);
+        max-width: (1280/16rem);
         margin: auto;
-        margin-bottom: (50/16em);
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-title {
+        max-width: 20ch;
+      }
+
+      .cs-card-group {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        width: 100%;
+        max-width: (1280/16rem);
+        margin: 0;
+        padding: 0 (16/16rem);
+        /* prevents padding and border from affecting height and width */
+        background-color: #fff;
+        box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        z-index: 15;
+      }
+
+      .cs-item {
+        text-align: left;
+        list-style: none;
+        width: 100%;
+        border-bottom: 1px solid #e8e8e8;
+        box-sizing: border-box;
+        grid-column: span 12;
+        transition:
+          background-color 0.3s,
+          border-color 0.3s;
+
         &:last-of-type {
-          margin-bottom: 0;
+          border-bottom: none;
         }
+      }
 
-        picture {
-          width: (88/16em);
-          height: (88/16em);
-          margin: auto;
-          margin-bottom: (23/16em);
-          background: var(--primary);
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+      .cs-link {
+        text-decoration: none;
+        /* 24px - 60px top & Bottom */
+        /* 24px - 16px top & Bottom */
+        padding: clamp(1.5rem, 5.3vw, 3.75rem) clamp(1rem, 2.7vw, 2.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+      }
 
-          img {
-            width: (48/16em);
-            height: (48/16em);
-          }
-        }
-        h2 {
-          font-size: (32/16em);
-          font-weight: 700;
-          line-height: 27/20em;
-          text-align: center;
-          margin-bottom: 13/20em;
-          color: #1a1a1a;
-        }
-        p {
-          line-height: 24/18em;
-          text-align: center;
-          width: 100%;
-          opacity: 0.7;
-        }
+      .cs-icon {
+        color: var(--primary);
+        /* 32px - 40px */
+        height: clamp(2rem, 4vw, 2.5rem);
+        width: auto;
+        margin: 0 0 (16/16rem) 0;
+      }
+
+      .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2vw, 1.5625rem);
+        font-weight: 700;
+        text-align: inherit;
+        line-height: 1.2em;
+        margin: 0 0 (12/16rem) 0;
+        color: var(--headerColor);
+        transition: color 0.3s;
+      }
+
+      .cs-item-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        text-align: inherit;
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        transition:
+          color 0.3s,
+          opacity 0.3s;
       }
     }
   }
 
-  /* Inbetween */
-  @media only screen and (min-width: 768px) {
-    .services {
-      font-size: ~"min(1.8vw, 1em)";
-      width: 98%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #services-1304 {
+      .cs-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: (48/16rem);
+      }
 
-      .card {
-        max-width: (325/16em);
+      .cs-title {
         margin: 0;
       }
-    }
-  }
 
-  /* Large Desktop */
-  @media only screen and (min-width: 1300px) {
-    .services {
-      padding: (50/16em) (80/16em);
+      .cs-flex-group {
+        width: 50%;
+        /* prevents flexbox from squishing it */
+        flex: none;
+      }
 
-      .card {
-        max-width: (357/16em);
+      .cs-item {
+        grid-column: span 6;
+
+        &:nth-of-type(4),
+        &:nth-of-type(8) {
+          border-right: none;
+        }
+
+        &:nth-of-type(7),
+        &:nth-of-type(8) {
+          border-bottom: none;
+        }
       }
     }
   }
 
-  /* Dark mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #services {
-        background: var(--medium);
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #services-1304 {
+      .cs-card-group {
+        padding: 0;
+      }
 
-        picture {
-          background: var(--primaryDark);
+      .cs-item {
+        grid-column: span 3;
+        border-right: 1px solid #e8e8e8;
+
+        &:hover {
+          background-color: #1a1a1a;
+          border-color: #1a1a1a;
+
+          .cs-h3,
+          .cs-item-text {
+            color: var(--bodyTextColorWhite);
+          }
+
+          .cs-item-text {
+            opacity: 0.8;
+          }
         }
 
-        h2 {
-          font-weight: bold;
-          color: #fff;
+        &:nth-of-type(5),
+        &:nth-of-type(6),
+        &:nth-of-type(7),
+        &:nth-of-type(8) {
+          border-bottom: none;
         }
       }
     }
@@ -924,200 +1068,282 @@ import CTA from "@components/CTA.astro";
 <--- -------------------------- -*/
 
   /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs {
+  @media only screen and (min-width: 0rem) {
+    #sbs-945 {
       padding: var(--sectionPadding);
+      /* clips anything overflowing */
+      overflow: hidden;
+      position: relative;
 
       .cs-container {
         width: 100%;
-        max-width: (1280/16rem);
+        /* changes to 1280px at desktop */
+        max-width: (550/16rem);
         margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        row-gap: (40/16rem);
-      }
-
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        left: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-        right: 0;
-        bottom: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: left;
-        margin-bottom: (4/16rem);
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
       }
 
       .cs-title {
+        font-size: clamp(1.95rem, 5vw, 2.25rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
         text-align: left;
-        max-width: (800/16rem);
+        width: 100%;
+        max-width: (542/16rem);
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
       }
 
       .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
         margin-bottom: (16/16rem);
-
         &:last-of-type {
           margin-bottom: (32/16rem);
         }
       }
 
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: #f7f7f7;
-        border-radius: (16/16rem);
-        position: relative;
-      }
-
-      .cs-flex-p {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0 0 (16/16rem);
-        color: #353535;
-      }
-
-      .cs-name {
+      .cs-button-solid {
         font-size: (16/16rem);
-        font-weight: bold;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: (150/16rem);
+        padding: 0 (32/16rem);
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          background: #000;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+          border-radius: 0.25rem;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .cs-contact-group {
+        width: 100%;
+        margin-bottom: (32/16rem);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: (12/16rem);
+      }
+
+      .cs-link {
+        text-decoration: none;
+        padding-right: (30/16rem);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: (16/16rem);
+        position: relative;
+
+        &:hover {
+          &:before {
+            width: 100%;
+            height: (56/16em);
+          }
+          .cs-wrapper {
+            transform: scale(1.2);
+          }
+
+          .cs-icon {
+            transform: translateX(0.4375rem);
+          }
+        }
+
+        &:before {
+          /* light green circle that animates on hover */
+          content: "";
+          width: (48/16rem);
+          height: (48/16rem);
+          background: #eff1f0;
+          opacity: 1;
+          position: absolute;
+          display: block;
+          top: 50%;
+          left: 0;
+          z-index: -1;
+          transform: translateY(-50%);
+          transition:
+            width 0.3s,
+            height 0.3s,
+            border-radius 0.3s;
+        }
+      }
+
+      .cs-wrapper {
+        width: (48/16rem);
+        height: (48/16rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        transition: transform 0.3s;
+      }
+
+      .cs-icon {
+        width: (24/16rem);
+        height: auto;
+        display: block;
+        transition: transform 0.3s;
+      }
+
+      .cs-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (4/16rem);
+      }
+
+      .cs-header {
+        font-size: (16/16rem);
         line-height: 1.2em;
-        text-transform: uppercase;
-        margin: 0 0 (4/16rem);
+        font-weight: 700;
+        margin: 0;
         color: var(--headerColor);
         display: block;
       }
 
-      .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #353535;
+      .cs-link-content {
+        font-size: (16/16rem);
+        line-height: 1.2em;
+        font-weight: 400;
+        margin: 0;
+        color: var(--bodyTextColor);
         display: block;
       }
 
-      .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
+      .cs-image-group {
+        /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+        font-size: ~"min(2.24vw, .844em)";
+        /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+        width: (650/16em);
+        height: (687/16em);
+        position: relative;
+        z-index: 1;
       }
 
-      .cs-button-solid {
-        margin-top: (32/16rem);
+      .cs-picture {
+        /* clips the image to match the border radius of the cs-picture */
+        overflow: hidden;
+        display: block;
+        position: absolute;
+
+        img {
+          width: 100%;
+          height: 100%;
+          /* makes it act like a background image */
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .cs-picture1 {
+        width: (349/16em);
+        height: (590/16em);
+        top: (49/16em);
+        left: 0;
+      }
+
+      .cs-picture2 {
+        width: (281/16em);
+        height: (387/16em);
+        top: 0;
+        right: 0;
+      }
+
+      .cs-picture3 {
+        width: (281/16em);
+        height: (280/16em);
+        bottom: 0;
+        right: 0;
+      }
+
+      .cs-seal {
+        width: (150/16em);
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%, -40%);
+      }
+
+      .cs-floater {
+        display: none;
       }
     }
   }
 
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs {
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #sbs-945 {
       .cs-container {
-        flex-flow: row;
+        max-width: (1280/16rem);
+        flex-direction: row;
         justify-content: space-between;
-        gap: (52/16rem);
+        align-items: center;
       }
 
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
+      .cs-image-group {
+        /* set to inherit at Large Desktop */
+        font-size: ~"min(1.15vw, 1em)";
+        margin: 0;
+        /* prevents flexbox from squishing it */
         flex: none;
       }
 
-      .cs-right {
-        margin: 0;
+      .cs-content {
+        width: 51%;
       }
     }
   }
 
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
-
-        .cs-picture2 {
-          background-color: var(--dark);
-          /* 6px - 12px */
-          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-        }
-
-        .cs-topper {
-          color: var(--primaryLight);
-        }
-
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
-        .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex-group {
-          background-color: var(--accent);
-        }
-
-        .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
-        }
-
-        .cs-quote-icon {
-          opacity: 0.2;
-        }
+  /* Large Desktop - 1800px */
+  @media only screen and (min-width: 112.5rem) {
+    #sbs-945 {
+      .cs-floater {
+        width: (445/16rem);
+        height: auto;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: (20/16rem);
       }
     }
   }
@@ -1127,9 +1353,28 @@ import CTA from "@components/CTA.astro";
 <--- -------------------------- -*/
 
   /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs-r {
+  @media only screen and (min-width: 0rem) {
+    #sbs-1636 {
       padding: var(--sectionPadding);
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        content: "";
+        width: 100%;
+        height: 70%;
+        background: var(--bodyDark);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .cs-topper {
+        color: var(--primary);
+      }
 
       .cs-container {
         width: 100%;
@@ -1137,187 +1382,520 @@ import CTA from "@components/CTA.astro";
         margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        row-gap: (40/16rem);
+        /* 48px - 100px */
+        gap: clamp(3rem, 9vw, 6.25rem);
       }
 
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-      }
-
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        right: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-        bottom: 0;
-        left: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
         text-align: left;
-        margin-bottom: (4/16rem);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-flex {
+        max-width: (608/16rem);
       }
 
       .cs-title {
-        text-align: left;
-        max-width: (800/16rem);
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-h3 {
+        font-size: (20/16rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 (16/16rem) 0;
+        color: var(--bodyTextColorWhite);
       }
 
       .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
         margin-bottom: (16/16rem);
+        opacity: 0.8;
+        color: var(--bodyTextColorWhite);
+
         &:last-of-type {
           margin-bottom: (32/16rem);
         }
       }
 
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: #f7f7f7;
-        border-radius: (16/16rem);
-        position: relative;
-      }
-
-      .cs-flex-p {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        margin: 0 0 (16/16rem);
-        color: #353535;
-      }
-
-      .cs-name {
+      .cs-button-solid {
         font-size: (16/16rem);
-        font-weight: bold;
-        line-height: 1.2em;
-        text-transform: uppercase;
-        margin: 0 0 (4/16rem);
-        color: var(--headerColor);
-        display: block;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: (150/16rem);
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          background: #000;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
       }
 
-      .cs-job {
-        font-size: (14/16rem);
-        line-height: 1.5em;
-        color: #353535;
-        display: block;
+      .cs-ul {
+        margin: 0 0 2rem 0;
+        max-width: 39.375rem;
+        padding: 0;
+        columns: 2;
+
+        .cs-li {
+          position: relative;
+          opacity: 0.9;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin: 0 0 0.5rem 0;
+          list-style: none;
+          color: var(--bodyTextColorWhite);
+          gap: 0.75rem;
+
+          &:before {
+            content: "";
+            display: block;
+            border-radius: 0.25rem 0 0.25rem 0;
+            margin-top: 0.5rem;
+            background: #fff;
+            height: 0.5rem;
+            width: 0.5rem;
+            flex: none;
+          }
+        }
       }
 
-      .cs-quote-icon {
-        /* 60px - 136px */
-        width: clamp(3.75rem, 10vw, 8.5rem);
-        height: auto;
-        position: absolute;
-        /* 16px - 32px */
-        right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
+      .cs-picture {
+        width: 100%;
+        height: 90vw;
+        /* 340px - 620px */
+        max-height: clamp(21.25rem, 45vw, 38.75rem);
+        display: block;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        .cs-play {
+          margin: 0;
+          box-sizing: border-box;
+          padding: 0;
+          width: clamp(5rem, 14vw, 7.5rem);
+          height: clamp(5rem, 14vw, 7.5rem);
+          display: flex;
+          pointer-events: none;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(8px);
+          border: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 10;
+          transform: translate(-50%, -50%);
+          transition:
+            transform 0.3s,
+            opacity 0.3s;
+
+          .play-icon {
+            width: 1.25rem;
+            height: auto;
+          }
+          &.cs-hide {
+            transform: translate(-50%, -50%) scale(0) !important;
+            opacity: 0;
+          }
+        }
+
+        video {
+          font-family: var(--bodyFontFamily);
+          font-size: 100%;
+          color: var(--bodyTextColor);
+          margin: 0;
+          box-sizing: border-box;
+          padding: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
       }
     }
   }
 
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs-r {
-      .cs-container {
-        flex-flow: row;
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbs-1636 {
+      &:before {
+        height: 63%;
+      }
+      .cs-content {
+        flex-direction: row;
         justify-content: space-between;
-        gap: (52/16rem);
+        align-items: flex-start;
+        gap: (40/16rem);
       }
 
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
-        /* sends it to the right */
-        order: 2;
-        flex: none;
+      .cs-flex {
+        width: 50%;
+        text-align: left;
+        max-width: (608/16rem);
       }
 
-      .cs-right {
+      .cs-title {
         margin: 0;
       }
     }
   }
 
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs-r {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
+  /*-- -------------------------- -->
+<---      Why Choose Us         -->
+<--- -------------------------- -*/
 
-        .cs-picture2 {
-          background-color: var(--dark);
-          /* 6px - 12px */
-          border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-        }
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #why-choose-1634 {
+      padding: var(--sectionPadding);
 
-        .cs-topper {
-          color: var(--primaryLight);
-        }
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: (584/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 100px */
+        gap: clamp(3rem, 10vw, 6.25rem);
+      }
 
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
-        .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
 
-        .cs-flex-group {
-          background-color: var(--accent);
-        }
+      .cs-flex {
+        max-width: (616/16rem);
+      }
 
-        .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
-        }
+      .cs-title {
+        max-width: 20ch;
+      }
 
-        .cs-quote-icon {
-          opacity: 0.2;
+      .cs-topper {
+        color: var(--primary);
+      }
+
+      .cs-text {
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: 0;
         }
+      }
+
+      .cs-wrapper {
+        width: 100%;
+      }
+
+      .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: (28/16rem);
+        /* 16px - 20px */
+        column-gap: clamp(1rem, 2.3vw, 1.25rem);
+      }
+
+      .cs-item {
+        text-align: left;
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        grid-column: span 12;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 16px - 24px */
+        gap: clamp(1rem, 3vw, 1.5rem);
+      }
+
+      .cs-icon-wrapper {
+        /* 60px - 80px */
+        width: clamp(3.75rem, 7vw, 5rem);
+        height: clamp(3.75rem, 7vw, 5rem);
+        margin: 0;
+        box-sizing: border-box;
+        border: 1px solid var(--primary);
+        border-radius: 0.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* prevents flexbox from squishing it */
+        flex: none;
+      }
+
+      .cs-icon {
+        width: (32/16rem);
+        height: auto;
+        display: block;
+      }
+
+      .cs-h3 {
+        font-size: (20/16rem);
+        line-height: 1.5em;
+        margin: 0;
+        margin-bottom: (8/16rem);
+        color: var(--headerColor);
+        text-align: inherit;
+      }
+
+      .cs-item-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        text-align: inherit;
+      }
+
+      .cs-wrapper {
+        /* makes the contents of this container act as though the container doesn't exist. They are now children of the cs-container so they can be positioned around each other. This allows us to sue the order property to place the cs-image-group at the top of the page on mobile */
+        display: contents;
+      }
+
+      .cs-image-group {
+        font-size: ~"min(2.7vw, 1em)";
+        width: (542/16em);
+        height: (494/16em);
+        /* sends it to teh top in the 1st position */
+        order: -1;
+        position: relative;
+        z-index: 1;
+      }
+
+      .cs-picture-wrapper {
+        width: 80.073801%;
+        height: 83.805668%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: stretch;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+
+      .cs-box {
+        width: 60%;
+        margin-top: (-38/16em);
+        margin-left: (24/16em);
+        padding: (16/16em);
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (4/16rem);
+        position: relative;
+        z-index: 10;
+      }
+
+      .cs-header {
+        font-size: (16/16em);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        color: var(--headerColor);
+        display: block;
+      }
+
+      .cs-desc {
+        font-size: (14/16em);
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--primary);
+        display: block;
+      }
+
+      .cs-picture {
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .cs-picture1 {
+        width: 100%;
+        height: 100%;
+      }
+
+      .cs-picture2 {
+        width: 36.346863%;
+        height: 39.878543%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #why-choose-1634 {
+      .cs-container {
+        max-width: (1280/16rem);
+      }
+
+      .cs-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cs-flex {
+        text-align: left;
+        width: 40vw;
+        max-width: (640/16rem);
+        flex: none;
+      }
+
+      .cs-title {
+        margin: 0;
+      }
+
+      .cs-h3,
+      .cs-item-text {
+        text-align: left;
+      }
+
+      .cs-item {
+        grid-column: span 4;
+      }
+
+      .cs-image-group {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #why-choose-1634 {
+      /* set the darker background color on the main div */
+      background-color: #222;
+
+      overflow: hidden;
+
+      .cs-title {
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cs-text {
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+      }
+
+      .cs-content {
+        align-items: flex-start;
+      }
+
+      .cs-flex {
+        width: 50%;
+      }
+
+      .cs-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: (40/16rem);
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          /* make the white space dependant on the height of the cs-wrapper as a pseudo element attached to the cs wrapper. This makes the white background responsive to the amount of items you have in your list. When the list grows or shrinks, the design will maintain its same spacing */
+          content: "";
+          width: 100vw;
+          height: 100vw;
+          background: #fff;
+          opacity: 1;
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 50%;
+          z-index: -1;
+          transform: translateX(-50%);
+        }
+      }
+
+      .cs-card-group {
+        max-width: (630/16rem);
+        /* use padding to push add the same amount of space between the content and the top of the card group as the negative margin top value on the cs-image-group. This makes sure that it counter acts the effects of the negative margin affecting the card group as well */
+        padding-top: (48/16rem);
+        align-self: flex-start;
+      }
+
+      .cs-image-group {
+        width: (542/16em);
+        /* by setting height to auto, it will stretch to fill the container height. So when you add or subtract more cards and change the height of the container, the image group will shrink as well. Thats why we set the heights of the images in percentages. They will always be X% tall inside the cs-image-group. So when the image group stretches to match the container height, the pictures percentage height also grows proportionally. This ensures the design responds to changes in height from the card section on the left. */
+        height: auto;
+        min-height: (494/16em);
+        /* makes it overlap the .cs-wrapper div */
+        margin-top: (-48/16rem);
+        order: 2;
+        flex: none;
+      }
+
+      .cs-item {
+        grid-column: span 12;
+        flex-direction: row;
       }
     }
   }
@@ -1455,143 +2033,171 @@ import CTA from "@components/CTA.astro";
 <--- -------------------------- -*/
 
   /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #reviews {
-      /* Centers the button */
-      text-align: center;
+  @media only screen and (min-width: 0rem) {
+    #reviews-508 {
       padding: var(--sectionPadding);
 
       .cs-container {
         width: 100%;
-        max-width: (1104/16rem);
+        /* changes to 1280px at tablet */
+        max-width: (550/16rem);
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: (48/16rem);
       }
 
-      .cs-topper {
-        text-align: center;
-        margin-bottom: (16/16rem);
-      }
-
-      .cs-title {
-        text-align: center;
-        max-width: (700/16rem);
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: (522/16rem);
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
       }
 
       .cs-text {
-        text-align: center;
-        max-width: (650/16rem);
-        /* 88px - 104px */
-        margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
-      }
-
-      .cs-card-group {
-        /* 48px - 64px */
-        margin: 0 auto clamp(3rem, 5vw, 4rem);
-        padding: 0;
-      }
-
-      .cs-item {
-        text-align: left;
-        list-style: none;
-        width: 100%;
-        max-width: (542/16rem);
-        margin: 0 auto (64/16rem);
-        /* Prevents padding from affecting height & width */
-        box-sizing: border-box;
-        /* Padding L & R - 16px - 32px */
-        padding: (60/16rem) clamp(1rem, 3.2vw, 2rem) 0;
-        /* 32px - 40px */
-        padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
-        background: #fff;
-        box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
-        border-radius: (4/16rem);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-
+        margin-bottom: (16/16rem);
         &:last-of-type {
-          margin-bottom: 0;
+          margin-bottom: (32/16rem);
         }
       }
 
-      .cs-item-img {
-        width: (80/16rem);
-        height: (80/16rem);
-        position: absolute;
-        top: (-40/16rem);
-      }
-
-      .cs-item-p {
+      .cs-button-solid {
         font-size: (16/16rem);
-        line-height: 1.5em;
-        margin: 0 0 (20/16rem);
-        padding-bottom: (20/16rem);
-        color: var(--bodyTextColor);
-        border-bottom: 1px solid #e8e9ec;
-      }
-
-      .cs-reviewer {
-        font-size: (16/16rem);
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
         font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: (150/16rem);
+        padding: 0 (24/16rem);
+        background-color: var(--primary);
+        border-radius: (4/16rem);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          background: #000;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          border-radius: (4/16rem);
+          transition: width 0.3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .cs-review {
+        width: 100%;
+        max-width: (632/16rem);
+        /* 24px - 60px top & bottom */
+        /* 16px - 60px left & right */
+        padding: clamp(1.5rem, 5.8vw, 3.75rem) clamp(1rem, 5vw, 3.75rem);
+        border: 1px solid #f1f1f4;
+        /* prevents padding from affecting width & height */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .cs-review-p {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
         line-height: 1.5em;
-        width: 40%;
-        margin: 0 auto 0 0;
+        width: 100%;
+        /* 16px - 32px */
+        margin: 0 0 clamp(1rem, 3vw, 2rem) 0;
+        color: var(--bodyTextColor);
+      }
+
+      .cs-info {
+        display: inline-block;
+      }
+
+      .cs-profile {
+        width: (60/16rem);
+        height: auto;
+        margin-right: (20/16rem);
+        border-radius: 50%;
+        display: block;
+      }
+
+      .cs-name {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 1.5vw, 1.25rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin-bottom: (12/16rem);
         color: var(--headerColor);
         display: block;
       }
 
-      .cs-desc {
-        font-size: (14/16rem);
-        font-weight: 400;
-        color: var(#353535);
+      .cs-location {
+        /* 13px - 16px */
+        font-size: clamp(0.8125rem, 1.5vw, 1rem);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--headerColor);
         display: block;
-      }
-
-      .cs-item-stars {
-        width: (96/16rem);
-        height: (16/16rem);
       }
     }
   }
 
   /* Tablet - 768px */
-  @media only screen and (min-width: 48em) {
-    #reviews {
-      .cs-card-group {
-        display: flex;
+  @media only screen and (min-width: 48rem) {
+    #reviews-508 {
+      .cs-container {
+        max-width: (1280/16rem);
+        flex-direction: row;
+        align-items: flex-start;
         justify-content: space-between;
-        align-items: center;
-        gap: (16/16rem);
       }
 
-      .cs-item {
-        /* reset margin so it won't interfere with flexbox */
-        margin: 0;
-      }
-    }
-  }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #reviews {
-        .cs-title,
-        .cs-text,
-        .cs-item-p,
-        .cs-reviewer {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-item {
-          background: var(--medium);
-        }
-
-        .cs-desc {
-          color: var(--primaryLight);
-        }
+      .cs-review {
+        width: 73%;
       }
     }
   }
 </style>
+
+<script>
+  function togglePlayButton() {
+    document.querySelectorAll("#sbs-1636 .cs-picture").forEach((e) => {
+      e.addEventListener("click", () => {
+        document.querySelectorAll("#sbs-1636 .cs-play").forEach((e) => {
+          e.classList.toggle("cs-hide");
+        });
+      });
+    });
+  }
+  function toggleVideoPlayback() {
+    const e = document.querySelector("#sbs-1636 video");
+    e.addEventListener("click", () => {
+      e.paused ? e.play() : e.pause();
+    });
+  }
+  togglePlayButton(), toggleVideoPlayback();
+</script>

@@ -12,12 +12,20 @@
     "url": "/projects/"
   },
   {
-    "key": "Reviews",
-    "url": "/reviews/"
+    "key": "Services",
+    "children": [
+      { "key": "Residential Painting", "url": "/" },
+      { "key": "Commercial Painting", "url": "/" },
+      { "key": "Pressure Washing", "url": "/" },
+      { "key": "Fence & Deck Staining", "url": "/" },
+      { "key": "Epoxy Floor Coating", "url": "/" },
+      { "key": "Cabinet Painting & Staining", "url": "/" },
+      { "key": "Hardwood Floor Refinishing", "url": "/" },
+      { "key": "Wood Door Refinishing", "url": "/" }
+    ]
   },
   {
-    "key": "Blog",
-    "url": "/blog/",
-    "children": []
+    "key": "Reviews",
+    "url": "/reviews/"
   }
 ]

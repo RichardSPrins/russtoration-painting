@@ -1,15 +1,15 @@
 {
-	"name": "Code Stitch Web Designs",
-	"email": "help@codestitch.app",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
-	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Denver",
-		"state": "CO",
-		"zip": "80206",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
-	},
-	"domain": "www.codestitch.app"
+  "name": "Russtoration Painting",
+  "email": "russtorationpainting@gmail.com",
+  "phoneForTel": "+12088057602",
+  "phoneFormatted": "(208) 805-7602",
+  "address": {
+    "lineOne": "First Address Line",
+    "lineTwo": "Second Address Line",
+    "city": "Nampa",
+    "state": "ID",
+    "zip": "83686",
+    "mapLink": "https://maps.app.goo.gl/uA6oY4AMLsH16qQr8"
+  },
+  "domain": "www.russtorationpainting.com"
 }
