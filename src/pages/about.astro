@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
-import CTA from "@components/CTA.astro";
+const headerImg = await import("../assets/images/header.png");
+console.log(headerImg);
 ---
 
 <BaseLayout
-  title="About"
-  description="Meta description for the page"
-  preloadImg={import("../assets/images/cabinets2.jpg")}
+  title="About Us"
+  description="Get to know Russtoration Painting, your trusted painting contractor in the Treasure Valley"
+  preloadImg={headerImg.default.src}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
@@ -15,27 +16,565 @@ import CTA from "@components/CTA.astro";
   <section id="int-hero">
     <h1 id="home-h">About Us</h1>
     <picture>
-      <source
-        media="(max-width: 600px)"
-        srcset="/assets/images/cabinets2-m.jpg"
-      />
-      <source
-        media="(min-width: 601px)"
-        srcset="/assets/images/cabinets2.jpg"
-      />
+      <source media="(max-width: 600px)" srcset="/assets/images/header.png" />
+      <source media="(min-width: 601px)" srcset="/assets/images/header.png" />
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/cabinets2.jpg"
-        alt="kitchen cabinets"
+        src="/assets/images/header.png"
+        alt="Painter on roof"
         loading="eager"
         width="2500"
         height="1667"
       />
     </picture>
   </section>
+
+  <!-- ============================================ -->
+  <!--                Side By Side                  -->
+  <!-- ============================================ -->
+
+  <section id="sbs-945">
+    <div class="cs-container">
+      <div class="cs-image-group">
+        <!--Long Left Image-->
+        <picture class="cs-picture cs-picture1">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_750,h_1000,ar_3:4/v1721170950/Russtoration%20Painting/20230912_170018_mc92ks.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_750,h_1000,ar_3:4/v1721170950/Russtoration%20Painting/20230912_170018_mc92ks.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_750,h_1000,ar_3:4/v1721170950/Russtoration%20Painting/20230912_170018_mc92ks.jpg"
+            alt="hair salon"
+            width="349"
+            height="590"
+          />
+        </picture>
+        <!--Top right image-->
+        <picture class="cs-picture cs-picture2">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170945/Russtoration%20Painting/20240105_150522_v3aayp.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170945/Russtoration%20Painting/20240105_150522_v3aayp.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170945/Russtoration%20Painting/20240105_150522_v3aayp.jpg"
+            alt="hair salon"
+            width="281"
+            height="387"
+          />
+        </picture>
+        <!--Bottom right image-->
+        <picture class="cs-picture cs-picture3">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170957/Russtoration%20Painting/20220715_115349_coycsr.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170957/Russtoration%20Painting/20220715_115349_coycsr.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170957/Russtoration%20Painting/20220715_115349_coycsr.jpg"
+            alt="hair salon"
+            width="281"
+            height="280"
+          />
+        </picture>
+        <!--Seal-->
+        <img
+          class="cs-seal"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/seal.svg"
+          alt="seal"
+          width="150"
+          height="150"
+        />
+      </div>
+      <div class="cs-content">
+        <span class="cs-topper">ABOUT RUSSTORATION PAINTING</span>
+        <h2 class="cs-title">
+          WE ARE THE TREASURE VALLEY'S LEADING RESIDENTIAL & COMMERCIAL PAINTING
+          CONTRACTORS
+        </h2>
+        <p class="cs-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="cs-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="" class="cs-button-solid" aria-label="learn more about us"
+          >Learn More</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                   Reviews                    -->
+  <!-- ============================================ -->
+
+  <div id="reviews-1714">
+    <div class="cs-container">
+      <div class="cs-content">
+        <img
+          class="cs-icon"
+          src="/assets/svgs/quotation.svg"
+          alt="quote"
+          width="120"
+          height="99"
+          loading="lazy"
+          decoding="async"
+        />
+        <p class="cs-quote">
+          Russtoration Painting has been trusted with our entire multi family
+          dwelling management portfolio. for the last half a decade. This
+          company holds the highest standard of professionalism and respect for
+          our property needs and demanding schedule.
+        </p>
+      </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+      <source
+        media="(max-width: 600px)"
+        srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_1200,h_900,ar_4:3/v1721170951/Russtoration%20Painting/20230729_212800_nudtj1.jpg"
+      />
+      <source
+        media="(min-width: 601px)"
+        srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_2400,h_1800,ar_4:3/v1721170951/Russtoration%20Painting/20230729_212800_nudtj1.jpg"
+      />
+      <img
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_2400,h_1800,ar_4:3/v1721170951/Russtoration%20Painting/20230729_212800_nudtj1.jpg"
+        alt="meeting"
+        width="360"
+        height="316"
+      />
+    </picture>
+  </div>
 </BaseLayout>
 
 <style lang="less">
   /* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
+
+  /*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #sbs-945 {
+      padding: var(--sectionPadding);
+      /* clips anything overflowing */
+      overflow: hidden;
+      position: relative;
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: (550/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-title {
+        font-size: clamp(1.95rem, 5vw, 2.25rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: (542/16rem);
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+      }
+
+      .cs-text {
+        margin-bottom: (16/16rem);
+        &:last-of-type {
+          margin-bottom: (32/16rem);
+        }
+      }
+
+      .cs-button-solid {
+        font-size: (16/16rem);
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: (150/16rem);
+        padding: 0 (32/16rem);
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 0%;
+          background: #000;
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+          border-radius: 0.25rem;
+        }
+
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
+      }
+
+      .cs-contact-group {
+        width: 100%;
+        margin-bottom: (32/16rem);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: (12/16rem);
+      }
+
+      .cs-link {
+        text-decoration: none;
+        padding-right: (30/16rem);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: (16/16rem);
+        position: relative;
+
+        &:hover {
+          &:before {
+            width: 100%;
+            height: (56/16em);
+          }
+          .cs-wrapper {
+            transform: scale(1.2);
+          }
+
+          .cs-icon {
+            transform: translateX(0.4375rem);
+          }
+        }
+
+        &:before {
+          /* light green circle that animates on hover */
+          content: "";
+          width: (48/16rem);
+          height: (48/16rem);
+          background: #eff1f0;
+          opacity: 1;
+          position: absolute;
+          display: block;
+          top: 50%;
+          left: 0;
+          z-index: -1;
+          transform: translateY(-50%);
+          transition:
+            width 0.3s,
+            height 0.3s,
+            border-radius 0.3s;
+        }
+      }
+
+      .cs-wrapper {
+        width: (48/16rem);
+        height: (48/16rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        transition: transform 0.3s;
+      }
+
+      .cs-icon {
+        width: (24/16rem);
+        height: auto;
+        display: block;
+        transition: transform 0.3s;
+      }
+
+      .cs-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (4/16rem);
+      }
+
+      .cs-header {
+        font-size: (16/16rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        color: var(--headerColor);
+        display: block;
+      }
+
+      .cs-link-content {
+        font-size: (16/16rem);
+        line-height: 1.2em;
+        font-weight: 400;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+      }
+
+      .cs-image-group {
+        /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+        font-size: ~"min(2.24vw, .844em)";
+        /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+        width: (650/16em);
+        height: (687/16em);
+        position: relative;
+        z-index: 1;
+      }
+
+      .cs-picture {
+        /* clips the image to match the border radius of the cs-picture */
+        overflow: hidden;
+        display: block;
+        position: absolute;
+
+        img {
+          width: 100%;
+          height: 100%;
+          /* makes it act like a background image */
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .cs-picture1 {
+        width: (349/16em);
+        height: (590/16em);
+        top: (49/16em);
+        left: 0;
+      }
+
+      .cs-picture2 {
+        width: (281/16em);
+        height: (387/16em);
+        top: 0;
+        right: 0;
+      }
+
+      .cs-picture3 {
+        width: (281/16em);
+        height: (280/16em);
+        bottom: 0;
+        right: 0;
+      }
+
+      .cs-seal {
+        width: (150/16em);
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%, -40%);
+      }
+
+      .cs-floater {
+        display: none;
+      }
+    }
+  }
+
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #sbs-945 {
+      .cs-container {
+        max-width: (1280/16rem);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .cs-image-group {
+        /* set to inherit at Large Desktop */
+        font-size: ~"min(1.15vw, 1em)";
+        margin: 0;
+        /* prevents flexbox from squishing it */
+        flex: none;
+      }
+
+      .cs-content {
+        width: 51%;
+      }
+    }
+  }
+
+  /* Large Desktop - 1800px */
+  @media only screen and (min-width: 112.5rem) {
+    #sbs-945 {
+      .cs-floater {
+        width: (445/16rem);
+        height: auto;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: (20/16rem);
+      }
+    }
+  }
+  /*-- -------------------------- -->
+<---          Review            -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #reviews-1714 {
+      position: relative;
+      z-index: 1;
+
+      .cs-container {
+        width: 100%;
+        max-width: (1312/16rem);
+        margin: auto;
+        padding: var(--sectionPadding);
+        padding-bottom: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+      }
+
+      .cs-content {
+        /* set text align to center if content needs to be centrally aligned */
+        text-align: left;
+        width: 100%;
+        /* -88px top -150px */
+        margin-bottom: ~"calc(clamp(5.5rem, 13vw, 9.375rem)*-1)";
+        /* 40px - 100px top & bottom */
+        /* 16px - 80px left & right */
+        padding: clamp(2.5rem, 9vw, 6.25rem) clamp(1rem, 7vw, 5rem);
+        box-sizing: border-box;
+        background-color: var(--bodyDark);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* aligns content to the left, set to center to centrally align */
+        align-items: flex-start;
+        /* 16px - 40px */
+        gap: clamp(1rem, 4vw, 2.5rem);
+        position: relative;
+        z-index: 10;
+        border-radius: 0.5rem;
+      }
+
+      .cs-icon {
+        width: (80/16rem);
+        height: auto;
+      }
+
+      .cs-quote {
+        /* 20px - 31px */
+        font-size: clamp(1.25rem, 2vw, 1.9375rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        max-width: (1000/16rem);
+        margin: 0;
+        color: #fff;
+      }
+
+      .cs-graphic {
+        width: (233/16rem);
+        height: auto;
+        opacity: 0.08;
+        position: absolute;
+        right: (-16/16rem);
+        bottom: (-70/16rem);
+        z-index: -1;
+      }
+
+      .cs-background {
+        width: 100%;
+        /* 340px - 620px */
+        height: clamp(21.25rem, 47vw, 38.75rem);
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #reviews-1714 {
+      .cs-content {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+  }
 </style>

@@ -29,11 +29,8 @@ const { description, title, preloadImg = "", schema = null } = Astro.props;
       property="og:url"
       content={`https://${client.domain}${Astro.url.pathname}`}
     />
-    <meta property="og:image" content="/assets/svgs/rp-logo-black.svg" />
-    <meta
-      property="og:image:secure_url"
-      content="/assets/svgs/rp-logo-black.svg"
-    />
+    <meta property="og:image" content="/assets/images/rp-og.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/rp-og.jpg" />
 
     <!--Favicons-->
     <link

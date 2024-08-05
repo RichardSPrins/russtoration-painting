@@ -27,9 +27,8 @@ import client from "@data/client.json";
           </picture>
           <div class="cs-flex-group">
             <span class="cs-header">Phone</span>
-            <a href="tel:888-4565-789
-                      " class="cs-link"
-              >+1 (888) 4565 789
+            <a href={`tel:${client.phoneForTel}`} class="cs-link"
+              >{client.phoneFormatted}
             </a>
           </div>
         </li>
@@ -47,12 +46,20 @@ import client from "@data/client.json";
           </picture>
           <div class="cs-flex-group">
             <span class="cs-header">Email</span>
-            <a href="mailto:Email@stitch.com" class="cs-link"
-              >Email@stitch.com</a
+            <a href={`mailto:${client.email}`} class="cs-link">{client.email}</a
             >
           </div>
         </li>
-        <li class="cs-li">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d304556.6162657318!2d-116.79007983258504!3d43.59597219586992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1722824963016!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <li class="cs-li">
           <picture class="cs-icon-wrapper">
             <img
               aria-hidden="true"
@@ -68,7 +75,7 @@ import client from "@data/client.json";
             <span class="cs-header">Address</span>
             <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
     <!--Form-->
@@ -82,7 +89,7 @@ import client from "@data/client.json";
           type="text"
           id="name-1392"
           name="name"
-          placeholder="Name"
+          placeholder="Full Name"
         />
       </label>
       <label class="cs-label cs-email">
@@ -93,7 +100,7 @@ import client from "@data/client.json";
           type="email"
           id="email-1392"
           name="email"
-          placeholder="Email"
+          placeholder="Email Address"
         />
       </label>
       <label class="cs-label cs-phone">
@@ -101,10 +108,10 @@ import client from "@data/client.json";
         <input
           class="cs-input"
           required
-          type="number"
+          type="tel"
           id="phone-1392"
           name="phone"
-          placeholder="Phone"
+          placeholder="+1(123) 456-7890"
         />
       </label>
       <label class="cs-label">
@@ -152,7 +159,7 @@ import client from "@data/client.json";
           <a href="" class="cs-link">Services</a>
         </li>
         <li class="cs-li">
-          <a href="" class="cs-link">Blog</a>
+          <a href="" class="cs-link">Reviews</a>
         </li>
         <li class="cs-li">
           <a href="" class="cs-link">Contact</a>
@@ -244,15 +251,18 @@ import client from "@data/client.json";
         </li>
       </ul>
       <span class="cs-copyright">
-        © Copyright 2023 - <a href="" class="cs-copyright-link"
-          >Stitch Agency</a
+        © Copyright 2023 - <a href="/" class="cs-copyright-link"
+          >Russtoration Painting</a
+        > - Site Crafted By <a
+          href="https://www.veloocitywebstudio.com"
+          class="cs-copyright-link">Velocity Web Studio</a
         >
       </span>
-      <div class="cs-flex">
+      <!-- <div class="cs-flex">
         <a href="" class="cs-copyright-link">Privacy Policy</a>
         <span class="cs-separater">|</span>
         <a href="" class="cs-copyright-link">Terms of Use</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </footer>
@@ -270,6 +280,14 @@ import client from "@data/client.json";
       background-color: #f7f7f7;
       position: relative;
       z-index: 10;
+
+      .map {
+        width: 100%;
+      }
+
+      .cs-topper {
+        color: var(--primary);
+      }
 
       .cs-container {
         width: 100%;
@@ -675,6 +693,7 @@ import client from "@data/client.json";
         line-height: 1.5em;
         margin: 0;
         display: block;
+        text-align: center;
       }
 
       .cs-copyright-link,
@@ -705,7 +724,7 @@ import client from "@data/client.json";
 
       .cs-bottom {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
       }
 
       .cs-flex {
@@ -715,6 +734,9 @@ import client from "@data/client.json";
       .cs-social {
         /* sends it to the right in the 3rd position */
         order: 3;
+      }
+      .cs-copyright {
+        text-align: left;
       }
     }
   }

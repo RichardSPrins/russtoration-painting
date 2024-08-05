@@ -1,11 +1,11 @@
 {
   "name": "Russtoration Painting",
   "email": "russtorationpainting@gmail.com",
-  "phoneForTel": "+12088057602",
-  "phoneFormatted": "(208) 805-7602",
+  "phoneForTel": "+19164001510",
+  "phoneFormatted": "(916) 400-1510",
   "address": {
-    "lineOne": "First Address Line",
-    "lineTwo": "Second Address Line",
+    "lineOne": null,
+    "lineTwo": null,
     "city": "Nampa",
     "state": "ID",
     "zip": "83686",

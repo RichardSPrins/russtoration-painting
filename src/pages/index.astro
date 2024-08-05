@@ -1,13 +1,10 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
-import CTA from "@components/CTA.astro";
-import GalleryPreview from "@components/GalleryPreview.astro";
 ---
 
 <BaseLayout
   title="Premier Painting & Restoration Services in Treasure Valley"
   description="Transform your home or business with Russtoration Painting. Offering expert interior and exterior painting, deck and fence staining, stucco repair, pressure washing, and more in Nampa, Boise, Meridian, and all of Treasure Valley. Get your free quote today!"
-  preloadImg={import("../assets/images/landing.jpg")}
 >
   <!-- ============================================ -->
   <!--                    Hero                      -->
@@ -31,16 +28,16 @@ import GalleryPreview from "@components/GalleryPreview.astro";
     <picture class="cs-background">
       <source
         media="(max-width: 600px)"
-        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+        srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_1200,h_900,ar_4:3/v1721170960/Russtoration%20Painting/20210604_143856_kzvhol.jpg"
       />
       <source
         media="(min-width: 601px)"
-        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+        srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_2400,h_1800,ar_4:3/v1721170960/Russtoration%20Painting/20210604_143856_kzvhol.jpg"
       />
       <img
         loading="lazy"
         decoding="async"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
+        src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_2400,h_1800,ar_4:3/v1721170960/Russtoration%20Painting/20210604_143856_kzvhol.jpg"
         alt="field"
         width="1920"
         height="1200"
@@ -67,6 +64,115 @@ import GalleryPreview from "@components/GalleryPreview.astro";
       loading="lazy"
       decoding="async"
     />
+  </section>
+
+  <!-- ============================================ -->
+  <!--                Side By Side                  -->
+  <!-- ============================================ -->
+
+  <section id="sbs-945">
+    <div class="cs-container">
+      <div class="cs-image-group">
+        <!--Long Left Image-->
+        <picture class="cs-picture cs-picture1">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_750,h_1000,ar_3:4/v1721170950/Russtoration%20Painting/20230912_170018_mc92ks.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_750,h_1000,ar_3:4/v1721170950/Russtoration%20Painting/20230912_170018_mc92ks.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_750,h_1000,ar_3:4/v1721170950/Russtoration%20Painting/20230912_170018_mc92ks.jpg"
+            alt="hair salon"
+            width="349"
+            height="590"
+          />
+        </picture>
+        <!--Top right image-->
+        <picture class="cs-picture cs-picture2">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170945/Russtoration%20Painting/20240105_150522_v3aayp.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170945/Russtoration%20Painting/20240105_150522_v3aayp.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170945/Russtoration%20Painting/20240105_150522_v3aayp.jpg"
+            alt="hair salon"
+            width="281"
+            height="387"
+          />
+        </picture>
+        <!--Bottom right image-->
+        <picture class="cs-picture cs-picture3">
+          <!--Mobile Image-->
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_800,ar_3:4/v1721170945/Russtoration%20Painting/20230909_171416_cl9jvu.jpg"
+          />
+          <!--Tablet and above Image-->
+          <source
+            media="(min-width: 601px)"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_800,ar_3:4/v1721170945/Russtoration%20Painting/20230909_171416_cl9jvu.jpg"
+          />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_800,ar_3:4/v1721170945/Russtoration%20Painting/20230909_171416_cl9jvu.jpg"
+            alt="hair salon"
+            width="281"
+            height="280"
+          />
+        </picture>
+        <!--Seal-->
+        <img
+          class="cs-seal"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/seal.svg"
+          alt="seal"
+          width="150"
+          height="150"
+        />
+      </div>
+      <div class="cs-content">
+        <span class="cs-topper">ABOUT RUSSTORATION PAINTING</span>
+        <h2 class="cs-title">
+          WE ARE THE TREASURE VALLEY'S LEADING RESIDENTIAL & COMMERCIAL PAINTING
+          CONTRACTORS
+        </h2>
+        <p class="cs-text">
+          At Russtoration Painting, we are dedicated to providing top-notch
+          painting services for both residential and commercial clients in
+          Nampa, Boise, Meridian, Kuna, Eagle, Emmett, and surrounding areas.
+          Our skilled team is experienced in handling projects of all sizes,
+          ensuring that every job is completed to the highest standards.
+        </p>
+        <p class="cs-text">
+          Whether you're a homeowner looking to refresh your living space or a
+          commercial contractor in need of reliable painting services,
+          Russtoration Painting has the expertise and resources to meet your
+          needs. We use high-quality materials and proven techniques to deliver
+          outstanding results that enhance the beauty and value of your
+          property.
+        </p>
+        <a href="" class="cs-button-solid" aria-label="learn more about us"
+          >Learn More</a
+        >
+      </div>
+    </div>
   </section>
 
   <!-- ============================================ -->
@@ -246,114 +352,6 @@ import GalleryPreview from "@components/GalleryPreview.astro";
   </section>
 
   <!-- ============================================ -->
-  <!--                Side By Side                  -->
-  <!-- ============================================ -->
-
-  <section id="sbs-945">
-    <div class="cs-container">
-      <div class="cs-image-group">
-        <!--Long Left Image-->
-        <picture class="cs-picture cs-picture1">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
-            alt="hair salon"
-            width="349"
-            height="590"
-          />
-        </picture>
-        <!--Top right image-->
-        <picture class="cs-picture cs-picture2">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
-            alt="hair salon"
-            width="281"
-            height="387"
-          />
-        </picture>
-        <!--Bottom right image-->
-        <picture class="cs-picture cs-picture3">
-          <!--Mobile Image-->
-          <source
-            media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
-          />
-          <!--Tablet and above Image-->
-          <source
-            media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
-          />
-          <img
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
-            alt="hair salon"
-            width="281"
-            height="280"
-          />
-        </picture>
-        <!--Seal-->
-        <img
-          class="cs-seal"
-          loading="lazy"
-          decoding="async"
-          src="/assets/svgs/seal.svg"
-          alt="seal"
-          width="150"
-          height="150"
-        />
-      </div>
-      <div class="cs-content">
-        <span class="cs-topper">ABOUT RUSSTORATION PAINTING</span>
-        <h2 class="cs-title">
-          WE ARE THE TREASURE VALLEY'S LEADING RESIDENTIAL & COMMERCIAL PAINTING
-          CONTRACTORS
-        </h2>
-        <p class="cs-text">
-          The Hair salon Stitch pack is designed specifically for a
-          hairdressers, salons, and beauty centers, with a modern high end feel
-          to match the expectations for design in this industry. These Stitches
-          are great for anything and everything hair and beauty but can also be
-          repurposed for anything high end or luxury.
-        </p>
-        <p class="cs-text">
-          The Hair salon Stitch pack is designed specifically for a
-          hairdressers, salons, and beauty centers, with a modern high end feel
-          to match the expectations for design in this industry. These Stitches
-          are great for anything and everything hair and beauty but can also be
-          repurposed for anything high end or luxury.
-        </p>
-        <a href="" class="cs-button-solid" aria-label="learn more about us"
-          >Learn More</a
-        >
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================ -->
   <!--                Why Choose Us                 -->
   <!-- ============================================ -->
 
@@ -387,7 +385,7 @@ import GalleryPreview from "@components/GalleryPreview.astro";
             <picture class="cs-icon-wrapper">
               <img
                 class="cs-icon"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chat-gold.svg"
+                src="/assets/svgs/Award.svg"
                 loading="lazy"
                 decoding="async"
                 alt="icon"
@@ -409,7 +407,7 @@ import GalleryPreview from "@components/GalleryPreview.astro";
             <picture class="cs-icon-wrapper">
               <img
                 class="cs-icon"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/call-gold.svg"
+                src="/assets/svgs/Checklist.svg"
                 loading="lazy"
                 decoding="async"
                 alt="icon"
@@ -432,7 +430,7 @@ import GalleryPreview from "@components/GalleryPreview.astro";
             <picture class="cs-icon-wrapper">
               <img
                 class="cs-icon"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/money-gold.svg"
+                src="/assets/svgs/Satisfaction.svg"
                 loading="lazy"
                 decoding="async"
                 alt="icon"
@@ -457,17 +455,17 @@ import GalleryPreview from "@components/GalleryPreview.astro";
               <!--Mobile Image-->
               <source
                 media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
+                srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_900,ar_1:1/v1721170961/Russtoration%20Painting/20210510_131223_wm1mmg.jpg"
               />
               <!--Tablet and above Image-->
               <source
                 media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
+                srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_900,ar_1:1/v1721170961/Russtoration%20Painting/20210510_131223_wm1mmg.jpg"
               />
               <img
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
+                src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_900,ar_1:1/v1721170961/Russtoration%20Painting/20210510_131223_wm1mmg.jpg"
                 alt="meeting"
                 width="434"
                 height="414"
@@ -482,17 +480,17 @@ import GalleryPreview from "@components/GalleryPreview.astro";
             <!--Mobile Image-->
             <source
               media="(max-width: 600px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_600,ar_1:1/v1721170935/Russtoration%20Painting/20240607_114618_y1zodq.jpg"
             />
             <!--Tablet and above Image-->
             <source
               media="(min-width: 601px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_600,ar_1:1/v1721170935/Russtoration%20Painting/20240607_114618_y1zodq.jpg"
             />
             <img
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_600,ar_1:1/v1721170935/Russtoration%20Painting/20240607_114618_y1zodq.jpg"
               alt="on computer"
               width="197"
               height="197"
@@ -515,17 +513,17 @@ import GalleryPreview from "@components/GalleryPreview.astro";
           <!--Mobile Image-->
           <source
             media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170953/Russtoration%20Painting/20210618_082018_tvzvzu.jpg"
           />
           <!--Tablet and above Image-->
           <source
             media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170953/Russtoration%20Painting/20210618_082018_tvzvzu.jpg"
           />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair5.jpg"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170953/Russtoration%20Painting/20210618_082018_tvzvzu.jpg"
             alt="hair salon"
             width="349"
             height="590"
@@ -536,17 +534,17 @@ import GalleryPreview from "@components/GalleryPreview.astro";
           <!--Mobile Image-->
           <source
             media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170957/Russtoration%20Painting/20220715_115349_coycsr.jpg"
           />
           <!--Tablet and above Image-->
           <source
             media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170957/Russtoration%20Painting/20220715_115349_coycsr.jpg"
           />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair6.jpg"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_900,h_1200,ar_3:4/v1721170957/Russtoration%20Painting/20220715_115349_coycsr.jpg"
             alt="hair salon"
             width="281"
             height="387"
@@ -557,17 +555,17 @@ import GalleryPreview from "@components/GalleryPreview.astro";
           <!--Mobile Image-->
           <source
             media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_800,ar_3:4/v1721170979/Russtoration%20Painting/20210413_154758_y83sjk.jpg"
           />
           <!--Tablet and above Image-->
           <source
             media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+            srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_800,ar_3:4/v1721170979/Russtoration%20Painting/20210413_154758_y83sjk.jpg"
           />
           <img
             loading="lazy"
             decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair7.jpg"
+            src="https://res.cloudinary.com/dxvvbtwxg/image/upload/c_fill,w_600,h_800,ar_3:4/v1721170979/Russtoration%20Painting/20210413_154758_y83sjk.jpg"
             alt="hair salon"
             width="281"
             height="280"
@@ -651,8 +649,8 @@ import GalleryPreview from "@components/GalleryPreview.astro";
         <video
           loop=""
           muted=""
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Videos/drone.mp4"
-          type="video/mp4"></video>
+          src="https://res.cloudinary.com/dxvvbtwxg/video/upload/v1721163912/Russtoration%20Painting/Russtoration_Painting_video_1_q2oj7r.mp4"
+        ></video>
         <button class="cs-play" aria-label="click to play video"
           ><img
             alt="play icon"
@@ -668,7 +666,7 @@ import GalleryPreview from "@components/GalleryPreview.astro";
     </div>
   </section>
 
-  <GalleryPreview />
+  <!-- <GalleryPreview /> -->
   <!-- <CTA /> -->
 
   <!-- ============================================ -->
@@ -680,33 +678,34 @@ import GalleryPreview from "@components/GalleryPreview.astro";
       <div class="cs-content">
         <span class="cs-topper">Feedback</span>
         <h2 class="cs-title">What Our Clients Say About Us</h2>
-        <p class="cs-text">
+        <!-- <p class="cs-text">
           Non curabitur gravida arcu ac tortor dignissim convallis aenean. Dui
           id ornare arcu odio. Sodales ut eu sem integer vitae justo eget magna.
           Duis tristique sollicitudin nibh sit amet commodo nulla facilisi
           nullam
-        </p>
-        <a href="" class="cs-button-solid">See More Reviews</a>
+        </p> -->
+        <!-- <a href="" class="cs-button-solid">See More Reviews</a> -->
       </div>
       <div class="cs-review">
         <p class="cs-review-p">
-          Consequat nisl vel pretium lectus quam id leo. Mauris augue neque
-          gravida in fermentum et sollicitudin ac orci. Blandit libero volutpat
-          sed cras ornare
+          Russ has been trusted with our entire multi family dwelling management
+          portfolio. for the last half a decade. This company holds the highest
+          standard of professionalism and respect for our property needs and
+          demanding schedule.
         </p>
         <img
           class="cs-profile"
           aria-hidden="true"
           loading="lazy"
           decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/profile1.png"
+          src="https://lh3.googleusercontent.com/a-/ALV-UjX464QCIwQppEXkyYPTQ3U-1NSTWSd6QCZCJY46PXW1jKcsOTsQ=w72-h72-p-rp-mo-br100"
           alt="profile"
           width="60"
           height="60"
         />
         <div class="cs-info">
-          <span class="cs-name">Rene Rodriguez</span>
-          <span class="cs-location">Acelerisque</span>
+          <span class="cs-name">Shawn B.</span>
+          <span class="cs-location">Google Review</span>
         </div>
       </div>
     </div>
@@ -743,7 +742,7 @@ import GalleryPreview from "@components/GalleryPreview.astro";
       }
 
       .cs-topper {
-        color: var(--bodyTextColorWhite);
+        color: var(--primary);
         opacity: 0.8;
         margin-bottom: 1rem;
       }
@@ -930,6 +929,10 @@ import GalleryPreview from "@components/GalleryPreview.astro";
         z-index: 15;
       }
 
+      .cs-topper {
+        color: var(--primary);
+      }
+
       .cs-item {
         text-align: left;
         list-style: none;
@@ -1038,8 +1041,8 @@ import GalleryPreview from "@components/GalleryPreview.astro";
         border-right: 1px solid #e8e8e8;
 
         &:hover {
-          background-color: #1a1a1a;
-          border-color: #1a1a1a;
+          background-color: var(--bodyDark);
+          border-color: var(--bodyDark);
 
           .cs-h3,
           .cs-item-text {
@@ -1074,6 +1077,10 @@ import GalleryPreview from "@components/GalleryPreview.astro";
       /* clips anything overflowing */
       overflow: hidden;
       position: relative;
+
+      .cs-topper {
+        color: var(--primary);
+      }
 
       .cs-container {
         width: 100%;
@@ -1737,6 +1744,7 @@ import GalleryPreview from "@components/GalleryPreview.astro";
         gap: (4/16rem);
         position: relative;
         z-index: 10;
+        border-radius: 0.25rem;
       }
 
       .cs-header {
@@ -2036,6 +2044,10 @@ import GalleryPreview from "@components/GalleryPreview.astro";
   @media only screen and (min-width: 0rem) {
     #reviews-508 {
       padding: var(--sectionPadding);
+
+      .cs-topper {
+        color: var(--primary);
+      }
 
       .cs-container {
         width: 100%;

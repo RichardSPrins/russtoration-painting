@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
+const headerImg = await import("../assets/images/header.png");
 ---
 
 <BaseLayout
-  title="Reviews"
-  description="Meta description for the page"
-  preloadImg={import("../assets/images/cabinets2.jpg")}
+  title="Our Reviews"
+  description="See what our customers are saying about our work."
+  preloadImg={headerImg.default.src}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
@@ -15,15 +16,12 @@ import CTA from "@components/CTA.astro";
   <section id="int-hero">
     <h1 id="home-h">Our Reviews</h1>
     <picture class="cs-picture">
-      <source
-        media="(max-width: 600px)"
-        srcset="/assets/images/landing-m.webp"
-      />
-      <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg" />
+      <source media="(max-width: 600px)" srcset="/assets/images/header.png" />
+      <source media="(min-width: 601px)" srcset="/assets/images/header.png" />
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/landing.jpg"
+        src="/assets/images/header.png"
         alt="new home"
         width="2500"
         height="1667"

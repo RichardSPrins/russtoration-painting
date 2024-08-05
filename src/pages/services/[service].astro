@@ -2,14 +2,12 @@
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-// const services = await getCollection("services");
 
 export const getStaticPaths = (async () => {
   const services = await getCollection("services");
   return services.map((entry) => ({
     params: {
-      service: entry.slug.split("/")[1],
-      location: entry.slug.split("/")[0],
+      service: entry.slug,
     },
     props: { entry },
   }));
@@ -37,19 +35,13 @@ const { Content } = await entry.render();
 
     <!-- Background Image -->
     <picture class="cs-background">
-      <source
-        media="(max-width: 600px)"
-        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
-      />
-      <source
-        media="(min-width: 601px)"
-        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
-      />
+      <source media="(max-width: 600px)" srcset={entry.data.heroImg.mobile} />
+      <source media="(min-width: 601px)" srcset={entry.data.heroImg.desktop} />
       <img
         loading="lazy"
         decoding="async"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"
-        alt="field"
+        src={entry.data.heroImg.desktop}
+        alt={entry.data.heroImg.alt}
         width="1920"
         height="1200"
         aria-hidden="true"
@@ -75,7 +67,6 @@ const { Content } = await entry.render();
       <div class="cs-content">
         <Content />
       </div>
-      <a class="cs-button-solid">Get a FREE Quote Today</a>
     </div>
   </section>
 </BaseLayout>
@@ -273,6 +264,8 @@ const { Content } = await entry.render();
         gap: 1rem;
         /* centers content horizontally, set to flex-start to left align */
         align-items: flex-start;
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
       h2,
       h3,

@@ -14,18 +14,33 @@
   {
     "key": "Services",
     "children": [
-      { "key": "Residential Painting", "url": "/" },
-      { "key": "Commercial Painting", "url": "/" },
-      { "key": "Pressure Washing", "url": "/" },
-      { "key": "Fence & Deck Staining", "url": "/" },
-      { "key": "Epoxy Floor Coating", "url": "/" },
-      { "key": "Cabinet Painting & Staining", "url": "/" },
-      { "key": "Hardwood Floor Refinishing", "url": "/" },
-      { "key": "Wood Door Refinishing", "url": "/" }
+      {
+        "key": "Residential Painting",
+        "url": "/services/residential-painting"
+      },
+      { "key": "Commercial Painting", "url": "/services/commercial-painting" },
+      { "key": "Pressure Washing", "url": "/services/pressure-washing" },
+      {
+        "key": "Fence & Deck Staining",
+        "url": "/services/deck-and-fence-restoration"
+      },
+      { "key": "Epoxy Floor Coating", "url": "/services/epoxy-floor-coating" },
+      {
+        "key": "Cabinet Painting & Staining",
+        "url": "/services/cabinet-painting"
+      },
+      {
+        "key": "Hardwood Floor Refinishing",
+        "url": "/services/hardwood-floor-refinishing"
+      },
+      {
+        "key": "Wood Door Refinishing",
+        "url": "/services/wood-door-restoration"
+      }
     ]
   },
   {
-    "key": "Reviews",
-    "url": "/reviews/"
+    "key": "Contact Us",
+    "url": "/contact"
   }
 ]

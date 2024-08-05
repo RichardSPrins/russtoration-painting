@@ -1,32 +1,27 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
 import CTA from "@components/CTA.astro";
+const headerImg = await import("../assets/images/header.png");
 ---
 
 <BaseLayout
-  title="Projects"
-  description="Meta description for the page"
-  preloadImg={import("../assets/images/cabinets2.jpg")}
+  title="Our Recent Work"
+  description="Check out some of the recent painting and renovation projects we at Russtoration Painting are proud to share."
+  preloadImg={headerImg.default.src}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
   <!-- ============================================ -->
 
   <section id="int-hero">
-    <h1 id="home-h">Our Projects</h1>
+    <h1 id="home-h">Our Work</h1>
     <picture>
-      <source
-        media="(max-width: 600px)"
-        srcset="/assets/images/cabinets2-m.jpg"
-      />
-      <source
-        media="(min-width: 601px)"
-        srcset="/assets/images/cabinets2.jpg"
-      />
+      <source media="(max-width: 600px)" srcset="/assets/images/header.png" />
+      <source media="(min-width: 601px)" srcset="/assets/images/header.png" />
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/cabinets2.jpg"
+        src="/assets/images/header.png"
         alt="kitchen cabinets"
         loading="eager"
         width="2500"
@@ -39,197 +34,710 @@ import CTA from "@components/CTA.astro";
   <!--                   Gallery                    -->
   <!-- ============================================ -->
 
-  <section id="gallery">
+  <section id="gallery-1449">
     <div class="cs-container">
-      <div class="cs-image-group">
-        <!-- Row 1-->
-        <div class="cs-row cs-row-1">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port1-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port1.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port1.jpg"
-              alt="new hallway"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port4-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port4.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port4.jpg"
-              alt="new home construction"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port7-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port7.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port7.jpg"
-              alt="building a new wall"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+      <div class="cs-content">
+        <div class="cs-flex">
+          <span class="cs-topper">Gallery</span>
+          <h2 class="cs-title">Our Recent Work</h2>
         </div>
-        <!-- Row 2 -->
-        <div class="cs-row cs-row-2">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port2-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port2.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port2.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port5-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port5.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port5.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port8-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port8.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port8.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-        </div>
-        <!-- Row 3 -->
-        <div class="cs-row cs-row-3">
-          <picture class="cs-picture cs-picture1">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port3-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port3.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port3.jpg"
-              alt="new kitchen"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture2">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port6-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port6.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port6.jpg"
-              alt="apartment addition"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-          <picture class="cs-picture cs-picture3">
-            <source
-              media="(max-width: 600px)"
-              srcset="/assets/images/portfolio/port9-m.jpg"
-            />
-            <source
-              media="(min-width: 601px)"
-              srcset="/assets/images/portfolio/port9.jpg"
-            />
-            <img
-              aria-hidden="true"
-              decoding="async"
-              src="/assets/images/portfolio/port9.jpg"
-              alt="kew kitchen cabinets"
-              loading="lazy"
-              width="400"
-              height="560"
-            />
-          </picture>
-
-          <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+        <div class="cs-button-group">
+          <button class="cs-button" data-filter="residential">
+            Residential
+          </button>
+          <button class="cs-button" data-filter="commercial">
+            Commercial
+          </button>
+          <button class="cs-button" data-filter="epoxy"> Epoxy Floors </button>
+          <button class="cs-button" data-filter="restoration">
+            Restoration
+          </button>
+          <button class="cs-button" data-filter="cabinets"> Cabinets </button>
         </div>
       </div>
-      <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+      <div class="cs-gallery-wrapper">
+        <!--Gallery 2-->
+        <div class="cs-gallery cs-hidden" data-category="residential">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810487/Russtoration%20Painting/20240413_165020_mj4ktr.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810487/Russtoration%20Painting/20240413_165020_mj4ktr.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810487/Russtoration%20Painting/20240413_165020_mj4ktr.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810485/Russtoration%20Painting/20231221_142007_fn8z73.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810485/Russtoration%20Painting/20231221_142007_fn8z73.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810485/Russtoration%20Painting/20231221_142007_fn8z73.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810486/Russtoration%20Painting/20231222_125351_wrg3db.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810486/Russtoration%20Painting/20231222_125351_wrg3db.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810486/Russtoration%20Painting/20231222_125351_wrg3db.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810490/Russtoration%20Painting/20240531_163509_iqo2yy.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810490/Russtoration%20Painting/20240531_163509_iqo2yy.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810490/Russtoration%20Painting/20240531_163509_iqo2yy.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 5-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810491/Russtoration%20Painting/IMG_20220709_040031_402_ptf1pi.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810491/Russtoration%20Painting/IMG_20220709_040031_402_ptf1pi.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810491/Russtoration%20Painting/IMG_20220709_040031_402_ptf1pi.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 6-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810492/Russtoration%20Painting/20230729_212800_zpqww3.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810492/Russtoration%20Painting/20230729_212800_zpqww3.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810492/Russtoration%20Painting/20230729_212800_zpqww3.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 7-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810493/Russtoration%20Painting/20230729_212855_nt96xb.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810493/Russtoration%20Painting/20230729_212855_nt96xb.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810493/Russtoration%20Painting/20230729_212855_nt96xb.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 8-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810494/Russtoration%20Painting/20230909_171422_rjsjai.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810494/Russtoration%20Painting/20230909_171422_rjsjai.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810494/Russtoration%20Painting/20230909_171422_rjsjai.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!-- Picture 9 -->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810494/Russtoration%20Painting/20230912_170018_a2cuba.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810494/Russtoration%20Painting/20230912_170018_a2cuba.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810494/Russtoration%20Painting/20230912_170018_a2cuba.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!-- Picture 10-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810497/Russtoration%20Painting/20240413_165115_nxq1fv.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810497/Russtoration%20Painting/20240413_165115_nxq1fv.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810497/Russtoration%20Painting/20240413_165115_nxq1fv.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!-- Picture 11-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810498/Russtoration%20Painting/20230909_171416_odk23m.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810498/Russtoration%20Painting/20230909_171416_odk23m.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810498/Russtoration%20Painting/20230909_171416_odk23m.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!-- Picture 11-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810528/Russtoration%20Painting/20210604_143856_w8xsvk.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810528/Russtoration%20Painting/20210604_143856_w8xsvk.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810528/Russtoration%20Painting/20210604_143856_w8xsvk.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+        <!--Gallery 3-->
+        <div class="cs-gallery cs-hidden" data-category="commercial">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810539/Russtoration%20Painting/123_1_2_nzu7rx.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810539/Russtoration%20Painting/123_1_2_nzu7rx.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810539/Russtoration%20Painting/123_1_2_nzu7rx.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810512/Russtoration%20Painting/20210511_152154_ltblyh.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810512/Russtoration%20Painting/20210511_152154_ltblyh.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810512/Russtoration%20Painting/20210511_152154_ltblyh.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810490/Russtoration%20Painting/20240607_114618_b3wtip.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810490/Russtoration%20Painting/20240607_114618_b3wtip.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810490/Russtoration%20Painting/20240607_114618_b3wtip.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1721171020/Russtoration%20Painting/20210130_113159_fjtkiy.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1721171020/Russtoration%20Painting/20210130_113159_fjtkiy.jpg"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1721171020/Russtoration%20Painting/20210130_113159_fjtkiy.jpg"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+        <!--Gallery 4-->
+        <div class="cs-gallery cs-hidden" data-category="epoxy">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810537/Russtoration%20Painting/20230617_135440_bjfpgs.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810537/Russtoration%20Painting/20230617_135440_bjfpgs.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810537/Russtoration%20Painting/20230617_135440_bjfpgs.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810514/Russtoration%20Painting/20230613_142853_iv9d5o.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810514/Russtoration%20Painting/20230613_142853_iv9d5o.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810514/Russtoration%20Painting/20230613_142853_iv9d5o.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+        <div class="cs-gallery cs-hidden" data-category="restoration">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810536/Russtoration%20Painting/20230128_131435_zggiuo.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810536/Russtoration%20Painting/20230128_131435_zggiuo.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810536/Russtoration%20Painting/20230128_131435_zggiuo.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810529/Russtoration%20Painting/20210608_112108_ajzlsz.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810529/Russtoration%20Painting/20210608_112108_ajzlsz.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810529/Russtoration%20Painting/20210608_112108_ajzlsz.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810530/Russtoration%20Painting/20210609_161126_j8egaw.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810530/Russtoration%20Painting/20210609_161126_j8egaw.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810530/Russtoration%20Painting/20210609_161126_j8egaw.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810529/Russtoration%20Painting/20210609_140303_tc0r1n.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810529/Russtoration%20Painting/20210609_140303_tc0r1n.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810529/Russtoration%20Painting/20210609_140303_tc0r1n.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 5-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810530/Russtoration%20Painting/20210609_153126_v6ee6y.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810530/Russtoration%20Painting/20210609_153126_v6ee6y.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810530/Russtoration%20Painting/20210609_153126_v6ee6y.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 6-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810526/Russtoration%20Painting/20210511_152201_s44xu1.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810526/Russtoration%20Painting/20210511_152201_s44xu1.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810526/Russtoration%20Painting/20210511_152201_s44xu1.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 7-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810526/Russtoration%20Painting/20210511_152252_inlgqa.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810526/Russtoration%20Painting/20210511_152252_inlgqa.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810526/Russtoration%20Painting/20210511_152252_inlgqa.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 8-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810513/Russtoration%20Painting/20211014_143408_vfkzad.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810513/Russtoration%20Painting/20211014_143408_vfkzad.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810513/Russtoration%20Painting/20211014_143408_vfkzad.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 9-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810489/Russtoration%20Painting/20240519_154317_sgna6q.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810489/Russtoration%20Painting/20240519_154317_sgna6q.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810489/Russtoration%20Painting/20240519_154317_sgna6q.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+        <div class="cs-gallery cs-hidden" data-category="cabinets">
+          <!--Picture 1-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810511/Russtoration%20Painting/20210429_135844_syudp6.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810511/Russtoration%20Painting/20210429_135844_syudp6.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810511/Russtoration%20Painting/20210429_135844_syudp6.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 2-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810516/Russtoration%20Painting/20210225_105956_cto0gn.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810516/Russtoration%20Painting/20210225_105956_cto0gn.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810516/Russtoration%20Painting/20210225_105956_cto0gn.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 3-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810517/Russtoration%20Painting/20210225_123953_zaar6v.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810517/Russtoration%20Painting/20210225_123953_zaar6v.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810517/Russtoration%20Painting/20210225_123953_zaar6v.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 4-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810517/Russtoration%20Painting/20210227_130313_mqz86r.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810517/Russtoration%20Painting/20210227_130313_mqz86r.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810517/Russtoration%20Painting/20210227_130313_mqz86r.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 5-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810518/Russtoration%20Painting/20210227_130319_tmwnfc.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810518/Russtoration%20Painting/20210227_130319_tmwnfc.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810518/Russtoration%20Painting/20210227_130319_tmwnfc.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 6-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810519/Russtoration%20Painting/20210321_185103_jwmezo.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810519/Russtoration%20Painting/20210321_185103_jwmezo.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810519/Russtoration%20Painting/20210321_185103_jwmezo.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 7-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810524/Russtoration%20Painting/20210429_135915_vshpic.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810524/Russtoration%20Painting/20210429_135915_vshpic.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810524/Russtoration%20Painting/20210429_135915_vshpic.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+          <!--Picture 8-->
+          <picture class="cs-image">
+            <source
+              media="(max-width: 600px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810534/Russtoration%20Painting/20220506_134547_jylvqc.webp"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810534/Russtoration%20Painting/20220506_134547_jylvqc.webp"
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://res.cloudinary.com/dxvvbtwxg/image/upload/v1722810534/Russtoration%20Painting/20220506_134547_jylvqc.webp"
+              alt="gallery"
+              width="305"
+              height="400"
+            />
+          </picture>
+        </div>
+      </div>
     </div>
   </section>
+
   <CTA />
 </BaseLayout>
 
@@ -240,105 +748,266 @@ import CTA from "@components/CTA.astro";
 <---          Gallery           -->
 <--- -------------------------- -*/
 
-  /* Mobile - 360px - Contains hover animation */
-  @media only screen and (min-width: 0em) {
-    #gallery {
-      /* Centers button */
-      text-align: center;
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #gallery-1449 {
       padding: var(--sectionPadding);
-      position: relative;
-      /* Prevents overflow from the image going off screen */
-      overflow: hidden;
+
       .cs-container {
         width: 100%;
-        max-width: (1322/16em);
+        max-width: (1280/16rem);
         margin: auto;
-      }
-
-      .cs-image-group {
-        /* used rem so it doesn't scale with the font size of on parent */
-        font-size: ~"min(1.1vw, 1em)";
-        width: 100%;
-        max-width: (1322/16em);
-        margin: 0 auto (60/16rem);
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: (30/16em);
-      }
-
-      .cs-row {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        gap: (30/16em);
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
+        z-index: 1;
       }
 
-      .cs-picture {
+      .cs-topper {
+        color: var(--primary);
+      }
+
+      .cs-content {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: (24/16rem);
+      }
+
+      .cs-title {
+        margin: 0;
+      }
+
+      .cs-button-group {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: (16/16rem);
+        /* 20px - 32px */
+        column-gap: clamp(1.25rem, 2vw, 2rem);
+      }
+
+      .cs-button {
+        font-size: (16/16rem);
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        background-color: transparent;
+        border: none;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+
+        &:before {
+          content: "";
+          width: 100%;
+          height: 4px;
+          background: var(--primary);
+          opacity: 0;
+          border-radius: 0 0 4px 4px;
+          position: absolute;
+          display: block;
+          bottom: 0;
+          left: 0;
+          transition:
+            opacity 0.3s,
+            bottom 0.3s;
+        }
+
+        &:hover {
+          color: var(--primary);
+          cursor: pointer;
+
+          &:before {
+            opacity: 1;
+            bottom: (-10/16rem);
+          }
+        }
+
+        &.cs-active {
+          color: var(--primary);
+
+          &:before {
+            opacity: 1;
+            bottom: (-10/16rem);
+          }
+        }
+      }
+
+      .cs-gallery-wrapper {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      .cs-gallery {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19.0625rem, 1fr));
+        /* 16px - 20px */
+        gap: clamp(1rem, 1.5vw, 1.25rem);
+        position: relative;
+        perspective: 700px;
+        transform-style: preserve-3d;
+        transition:
+          transform 0.7s,
+          opacity 0.3s,
+          visibility 0.5s,
+          top 0.3s,
+          left 0.3s;
+        /* makes the transfrom scaling orgin the top left corner, dictates the direction by which the scale transforms animate towards */
+        transform-origin: left top;
+
+        &.cs-hidden {
+          position: absolute;
+          /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
+          visibility: hidden;
+          /* prevents the mouse from interacting with it */
+          pointer-events: none;
+          /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
+          opacity: 0;
+          /* this top and left value help control the animation, by setting it to position absolute and left 0, the gallery won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-container (left: 0). Same for the top:0 value, the gallery won't go past that posiiton when it animates */
+          top: 0;
+          left: 0;
+          position: absolute;
+          /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
+          transform: scaleY(0) scaleX(0);
+
+          .cs-image {
+            /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
+            transform: translateY(2.1875rem) rotateX(90deg);
+            opacity: 0;
+          }
+        }
+      }
+
+      .cs-image {
+        /* 260px - 360px */
+        min-height: clamp(16.25rem, 60vw, 20rem);
+        border-radius: 0.5rem;
+        /* clips the image corners */
+        overflow: hidden;
         display: block;
         position: relative;
+        /* when .cs-hidden is removed from the .cs-gallery, reset these values and animate between their hidden styles */
+        transform: translateY(0rem) rotateX(0);
+        opacity: 1;
+        transition:
+          opacity 0.6s,
+          transform 0.6s;
+
+        &:nth-of-type(1) {
+          /* the transition delays change at desktop */
+          /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
+          transition-delay: 0.1s;
+        }
+        &:nth-of-type(2) {
+          transition-delay: 0.2s;
+        }
+        &:nth-of-type(3) {
+          transition-delay: 0.3s;
+        }
+        &:nth-of-type(4) {
+          transition-delay: 0.4s;
+        }
+        &:nth-of-type(5) {
+          transition-delay: 0.5s;
+        }
+        &:nth-of-type(6) {
+          transition-delay: 0.6s;
+        }
+        &:nth-of-type(7) {
+          transition-delay: 0.7s;
+        }
+        &:nth-of-type(8) {
+          transition-delay: 0.8s;
+        }
+
         img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
           position: absolute;
           top: 0;
           left: 0;
-        }
-      }
-
-      .cs-row-1 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (567/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (512/16em);
-        }
-      }
-
-      .cs-row-2 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (492/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (517/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
-        }
-      }
-
-      .cs-row-3 {
-        .cs-picture1 {
-          width: (420/16em);
-          height: (625/16em);
-        }
-
-        .cs-picture2 {
-          width: (420/16em);
-          height: (452/16em);
-        }
-
-        .cs-picture3 {
-          width: (420/16em);
-          height: (629/16em);
+          height: 100%;
+          width: 100%;
+          /* makes it act like a background image */
+          object-fit: cover;
         }
       }
     }
   }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #gallery-1449 {
+      .cs-content {
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .cs-button-group {
+        flex-direction: row;
+      }
+
+      .cs-button {
+        margin-bottom: (10/16rem);
+      }
+    }
+  }
 </style>
+
+<script>
+  class GalleryFilter {
+    filtersSelector = ".cs-button";
+    imagesSelector = ".cs-gallery";
+    activeClass = "cs-active";
+    hiddenClass = "cs-hidden";
+    activeFilter = null;
+    images = null;
+
+    constructor() {
+      const $filters = document.querySelectorAll(this.filtersSelector);
+      this.activeFilter = $filters[0];
+      this.images = document.querySelectorAll(this.imagesSelector);
+
+      this.activeFilter.classList.add(this.activeClass);
+
+      for (const $filter of $filters) {
+        $filter.addEventListener("click", () => this.onClick($filter));
+      }
+    }
+
+    onClick($filter) {
+      this.filter($filter.dataset.filter);
+
+      const { activeClass } = this;
+
+      this.activeFilter.classList.remove(activeClass);
+      $filter.classList.add(activeClass);
+
+      this.activeFilter = $filter;
+    }
+
+    filter(filter) {
+      const showAll = filter == "all";
+      const { hiddenClass } = this;
+
+      for (const $image of this.images) {
+        const show = showAll || $image.dataset.category == filter;
+        $image.classList.toggle(hiddenClass, !show);
+      }
+    }
+  }
+
+  new GalleryFilter();
+</script>

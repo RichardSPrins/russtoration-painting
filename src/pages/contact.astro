@@ -1,12 +1,12 @@
 ---
 import BaseLayout from "src/layouts/BaseLayout.astro";
-import client from "@data/client.json";
+const headerImg = await import("../assets/images/header.png");
 ---
 
 <BaseLayout
-  title="Contact"
-  description="Meta description for the page"
-  preloadImg={import("../assets/images/cabinets2.jpg")}
+  title="Contact Us"
+  description="Get a FREE Quote on your next project, from Russtoration Painting."
+  preloadImg={headerImg.default.src}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
@@ -15,18 +15,12 @@ import client from "@data/client.json";
   <section id="int-hero">
     <h1 id="home-h">Contact Us</h1>
     <picture>
-      <source
-        media="(max-width: 600px)"
-        srcset="/assets/images/cabinets2-m.jpg"
-      />
-      <source
-        media="(min-width: 601px)"
-        srcset="/assets/images/cabinets2.jpg"
-      />
+      <source media="(max-width: 600px)" srcset="/assets/images/header.png" />
+      <source media="(min-width: 601px)" srcset="/assets/images/header.png" />
       <img
         aria-hidden="true"
         decoding="async"
-        src="/assets/images/cabinets2.jpg"
+        src="/assets/images/header.png"
         alt="kitchen cabinets"
         loading="eager"
         width="2500"
