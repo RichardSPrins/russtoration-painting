@@ -86,8 +86,30 @@ import client from "@data/client.json";
       </ul>
     </div>
     <!--Form-->
-    <form class="cs-form" id="cs-form-1392" name="Contact Form" method="post">
+    <form
+      class="cs-form"
+      id="cs-form-1392"
+      name="Contact Form"
+      method="post"
+      action="https://api.web3forms.com/submit"
+    >
       <h3 class="cs-h3">Get A FREE Quote Today!</h3>
+      <input
+        type="hidden"
+        name="access_key"
+        value="bf84e42b-9c34-480f-b0c0-a9500a2937ff"
+      />
+      <input
+        type="checkbox"
+        name="botcheck"
+        class="hidden"
+        style="display: none;"
+      />
+      <input
+        type="hidden"
+        name="redirect"
+        value="https://russtorationpainting.com/success"
+      />
       <label class="cs-label">
         Name
         <input
@@ -95,7 +117,7 @@ import client from "@data/client.json";
           required
           type="text"
           id="name-1392"
-          name="name"
+          name="Name"
           placeholder="Full Name"
         />
       </label>
@@ -106,7 +128,7 @@ import client from "@data/client.json";
           required
           type="email"
           id="email-1392"
-          name="email"
+          name="Email"
           placeholder="Email Address"
         />
       </label>
@@ -117,7 +139,7 @@ import client from "@data/client.json";
           required
           type="tel"
           id="phone-1392"
-          name="phone"
+          name="Phone"
           placeholder="+1(123) 456-7890"
         />
       </label>
