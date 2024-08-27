@@ -1,9 +1,11 @@
 import { defineConfig } from "astro/config";
 // import NetlifyCMS from "astro-netlify-cms";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
+    sitemap(),
     // NetlifyCMS({
     //   config: {
     //     backend: {

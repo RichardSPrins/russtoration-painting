@@ -999,11 +999,10 @@ const headerImg = await import("../assets/images/header.png");
     }
 
     filter(filter) {
-      const showAll = filter == "all";
       const { hiddenClass } = this;
 
       for (const $image of this.images) {
-        const show = showAll || $image.dataset.category == filter;
+        const show = $image.dataset.category == filter;
         $image.classList.toggle(hiddenClass, !show);
       }
     }
